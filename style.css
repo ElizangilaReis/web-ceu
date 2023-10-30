@@ -52,12 +52,14 @@ body {
     color: var(--text-color);
     background-color: var(--body-color);
     -webkit-font-smoothing: antialiased;
-    
+    background-image: url(compress-img/Postion\ Absolute\ -\ bg-01\ headerbg1-min.png);
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 
 .title {
-    font: 700 var(--title-font-size) var(--title-font);
-    color: var(--title-color);
+    font-weight: 700;
+    color: var(--base-color);
     -webkit-font-smoothing: auto;
 }
 
@@ -117,16 +119,14 @@ body {
 }
 
 #header {
-    border-bottom: .1rem solid #E4E4E4;
+   /* border-bottom: .1rem solid #E4E4E4; */
     margin-bottom: 2rem;
     display: flex;
-    
     width: 100%;
     top: 0;
     left: 0;
-    position: fixed;
     z-index: 100;
-    background-color: var(--body-color);
+    padding-top: 80px;
 }
 
 #header.scroll{
@@ -138,7 +138,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 70%;
 }
 
 
@@ -165,7 +165,7 @@ nav ul li a::after {
 
     position: absolute;
     left: 0;
-    bottom: -2.4rem;
+    bottom: -1.4rem;
     transition: width .3s;
 }
 
@@ -182,12 +182,25 @@ nav .menu {
     transition: .5s;
 }
 
+.menu{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 nav .menu ul {
     display: none;
 }
 
 nav.show ul.grid {
     gap: 6.4rem;
+}
+
+.btn{
+    padding: 20px;
+    color: #32394c;
+    border-radius: 8px;
+    background: var(--gradient-secondary, linear-gradient(180deg, #0092DC 0%, #D7F5FF 100%));
 }
 
 nav.show .menu {
@@ -233,6 +246,7 @@ nav.show .icon-close {
 
 #home {
     overflow: hidden;
+    
 }
 
 #home .container {
@@ -247,7 +261,6 @@ nav.show .icon-close {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: var(--base-color-second);
     position: absolute;
     top: -16.8%;
     right: -16.7%;
@@ -285,7 +298,6 @@ nav.show .icon-close {
     hsla(var(--hue), 65%, 88%, 0.34),
     hsla(var(--hue), 36%, 57%, 1)
     );
-
 }
 
 /* Services */
@@ -295,11 +307,20 @@ nav.show .icon-close {
 }
 
 #services .card {
+    width: 306px;
+    height: 288px;
     padding: 5.8rem 3.8rem;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-    border-bottom: .4rem solid var(--base-color);
-    border-radius: .4rem .4rem 0 0;
+    border: 2px solid #8BBEE4;
+    background: linear-gradient(0deg, rgba(196, 196, 196, 0.00) 0%, rgba(196, 196, 196, 0.00) 100%), radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(191, 247, 255, 0.20) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0.00) 100%);
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(40px);
+    border-radius: 30px;
     text-align: center;
+}
+
+.img-card-services{
+    width: 90px;
 }
 
 #services .card i {
@@ -310,7 +331,7 @@ nav.show .icon-close {
 }
 
 #services .card .title {
-    font-size: 3rem;
+    font-size: 16px;
     margin-bottom: 1.2rem;
 }
 
