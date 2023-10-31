@@ -97,26 +97,6 @@ body {
     gap: 3.2rem;
 }
 
-.section {
-    padding: calc(8rem + var(--header-height)) 0;
-}
-
-.section .title {
-    margin-bottom: 1.6rem;
-}
-
-.section .subtitle {
-    font-size: var(--subtitle-font-size);
-}
-
-.section header {
-    margin-bottom: 6.4rem;
-}
-
-.section header strong {
-    color: var(--base-color);
-}
-
 #header {
    /* border-bottom: .1rem solid #E4E4E4; */
     margin-bottom: 2rem;
@@ -318,10 +298,62 @@ nav.show .icon-close {
     align-items: center;
 }
 
+#benefits .benefits{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+#benefits .imagem{
+    width: 584px;
+    height: 282px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: linear-gradient(0deg, rgba(167, 232, 255, 0.10) 0%, rgba(167, 232, 255, 0.10) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+#benefits .benefits img{
+    width: 57px;
+    height: 6px;
+}
+
 #illustration{
     width: 90%;
     flex-shrink: 0;
 }
+
+/* Vídeo */
+.video{
+    display: flex;
+    width: 1140px;
+    padding: 80px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Parceiros */
+/* Swiper */
+
+.swiper-slide {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--base-color);
+}
+
 
 .divider-2 {
     height: .1rem;
@@ -334,7 +366,12 @@ nav.show .icon-close {
 /* Services */
 
 #services .cards.grid {
-    gap: 2.4rem;
+   /*  gap: 2.4rem;*/
+    display: flex;
+    width: 1144px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
 }
 
 #services .card {
@@ -418,51 +455,120 @@ nav.show .icon-close {
     line-height: 130%; /* 26px */
 }
 
-/* Swiper */
-
-.swiper-slide {
-    height: auto;
-    padding: 6.4rem 1.6rem;
+/*.social{
+    display: flex;
+    padding: 8px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch; 
 }
+.social img{
+    width: 24px;
+    height: 24px;
+}*/
 
-.swiper-pagination-bullet-active {
-    background-color: var(--base-color);
-}
 
 /* Contact */
 
-#contact .grid {
+#contact{
     width: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--gradient-default, linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%));
+    background-image: url(compress-img/Positivon\ Absolute\ -\ Airplane.png);
+}
 
+#contact .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--gradient-default, linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%))
 }
 
 #contact .text p {
-    margin-bottom: 3.2rem;
+    color: var(--Gray, #32394C);
+
+    /* Text / Lead */
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
 }
 
-#contact .button i, #contact ul li i {
-    font-size: 2.4rem;
-    margin-right: 1rem;
+#contact .text h2{
+color: var(--Gray, #32394C);
+
+/* Headers / H3 */
+font-family: Fredoka One;
+font-size: 39px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 50.7px */
+
 }
 
-#contact ul.grid {
-    gap: 3.2rem;
+.airplace{
+    width: 234px;
+    height: 276.217px;
+    flex-shrink: 0;
 }
 
-#contact ul li {
+.airplace img{
+    width: 218.234px;
+    height: 267.488px;
+    flex-shrink: 0;
+}
+
+/* FAQ */
+.faq{
     display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-   
+    gap: 20px;
+    flex: 1 0 0;
+    background: var(--gradient-secondary, linear-gradient(180deg, #0092DC 0%, #D7F5FF 100%));
 }
-
-#contact ul li i {
-    color: var(--base-color);
+.question{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
 }
+.question h3{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
 
+    color: var(--primary-dark, #000D32);
+
+    /* Headers / H6 */
+    font-family: Fredoka One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+}
+.question p{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    color: var(--primary-dark, #000D32);
+
+    /* Text/Body */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+}
 /* Footer */
 
 footer {
