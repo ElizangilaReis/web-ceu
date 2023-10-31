@@ -60,6 +60,7 @@ body {
     font-weight: 700;
     color: var(--base-color);
     -webkit-font-smoothing: auto;
+    padding-top: 10px;
 }
 
 .button {
@@ -323,8 +324,12 @@ nav.show .icon-close {
 }
 
 #illustration{
-    width: 90%;
-    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.img-banner{
+    width: 1070px;
 }
 
 /* Vídeo */
@@ -377,7 +382,10 @@ nav.show .icon-close {
 #services .card {
     width: 306px;
     height: 288px;
-    padding: 5.8rem 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
     border: 2px solid #8BBEE4;
     background: linear-gradient(0deg, rgba(196, 196, 196, 0.00) 0%, rgba(196, 196, 196, 0.00) 100%), radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(191, 247, 255, 0.20) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0.00) 100%);
