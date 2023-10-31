@@ -371,7 +371,7 @@ nav.show .icon-close {
     width: 1144px;
     justify-content: center;
     align-items: flex-start;
-    gap: 7px;
+    gap: 25px;
 }
 
 #services .card {
