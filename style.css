@@ -25,6 +25,7 @@ html {
     --base-color: #00217E;
     --base-color-dart: #000D32;
     --base-color-second: #00A4DC;
+    --gradient-secondary: linear-gradient(180deg, #0092DC 0%, #D7F5FF 100%);
     --base-color-alt: var(--base-color-second);
     --color-white: #FFFFFF;
     --title-color: var(--base-color-second);
@@ -188,7 +189,7 @@ nav.show ul.grid {
     padding: 20px;
     color: #32394c;
     border-radius: 8px;
-    background: var(--gradient-secondary, linear-gradient(180deg, #0092DC 0%, #D7F5FF 100%));
+    background: var(--gradient-secondary);
 }
 
 nav.show .menu {
@@ -414,16 +415,23 @@ nav.show .icon-close {
     width: 90px;
 }
 
-#services .card i {
+#services .card img {
     display: block;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.2rem;
     font-size: 8rem;
     color: var(--base-color);
 }
 
 #services .card .title {
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 1.2rem;
+}
+
+
+#services .card p{
+    font-size: 16px;
+    text-align: center;
+    color: var(--base-color-dart);
 }
 
 #team .cards.grid {
@@ -504,7 +512,7 @@ nav.show .icon-close {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    background: var(--gradient-default, linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%))
+    background: var(--gradient-secondary);
 }
 
 #contact .text p {
@@ -551,7 +559,7 @@ line-height: 130%; /* 50.7px */
     align-items: center;
     gap: 20px;
     flex: 1 0 0;
-    background: var(--gradient-secondary, linear-gradient(180deg, #0092DC 0%, #D7F5FF 100%));
+    background: var(--gradient-secondary);
 }
 .question{
     display: flex;
@@ -568,10 +576,9 @@ line-height: 130%; /* 50.7px */
     gap: 10px;
     align-self: stretch;
 
-    color: var(--primary-dark, #000D32);
+    color: var(--primary-dark);
 
     /* Headers / H6 */
-    font-family: Fredoka One;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -583,10 +590,9 @@ line-height: 130%; /* 50.7px */
     gap: 10px;
     align-self: stretch;
 
-    color: var(--primary-dark, #000D32);
+    color: var(--primary-dark);
 
     /* Text/Body */
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
