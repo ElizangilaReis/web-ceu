@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEU</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="images/fonts/style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="compress-img/logo-mobile.png" sizes="64x64" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--CONFIG SLIDES CARROSEL-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -126,19 +128,49 @@
             </div>
         </section>
 
-        <section class="section">
-            <h2 class="title">Conheça a nossa solução e tire suas conclusões</h2>
-            <div class="video">
-                <video src=""></video>
+        <section class="section" id="section-video">
+            <h2 class="title size-title">Conheça a nossa solução e tire suas conclusões</h2>
+            <div class="imagem img-video">
+                <img class="img-banner" src="compress-img/boraconquistar-min.jpeg" alt="">
             </div>
         </section>
 
         <section class="section">
             <header>
-                <h2 class="title">Nossos Parceiros</h2>
+                <h2 class="title size-title">Nossos Parceiros</h2>
             </header>
-            <div id="partners" class="swiper-slide">
-                <img src="" alt="logos parceiros">
+            <div id="partners">
+                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" autoplay-delay="1000" autoplay-disable-on-interaction="false">
+    <swiper-slide>
+      <img src="compress-img/BAI-min.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="compress-img/BAnco Mundial-min.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="compress-img/Cinemax-min.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="compress-img/Kitadi-min.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="compress-img/Kubeta-min.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="compress-img/Tleva-min.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="compress-img/E.Carneiro-min.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="compress-img/Tleva-min.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="compress-img/Tupuca-min.png" />
+    </swiper-slide>
+  </swiper-container>
             </div>
         </section>
 
@@ -195,7 +227,7 @@
         <section class="section" id="team">
             <div class="container grid">
                 <header>
-                    <h2 class="title">Equipa CEU</h2>
+                    <h2 class="title size-title">Equipa CEU</h2>
                 </header>
                 <div class="cards grid">
                     <div class="card">
@@ -301,7 +333,8 @@
 
         <a href="#home" class="back-to-top"><img src="compress-img/svg/seta-para-cima 1.svg" alt=""></a>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!--CONFIG SLIDES CARROSEL-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>

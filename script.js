@@ -35,20 +35,27 @@ function changeHeader() {
 
 // Slider
 
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
     pagination: {
-        el: '.swiper-pagination'
+      el: '.swiper-pagination',
     },
-    mousewheel: true,
-    keyboard: true,
-    breakpoints: {
-        767: {
-            slidesPerView: 2,
-            setWrapperSize: true
-        }
-    }
-});
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 
 // Scroll Reveal
 

@@ -343,9 +343,22 @@ nav.show .icon-close {
     width: 1070px;
 }
 
-.section h2{
+#section-video h2{
     text-align: center;
+}
+
+.size-title{
     font-size: 39px;
+}
+
+#section-video {
+    text-align: center;
+}
+
+.img-video{
+    height: 400px;
+    overflow: hidden;
+    padding-top: 10px;
 }
 
 /* Vídeo */
@@ -360,20 +373,26 @@ nav.show .icon-close {
 /* Parceiros */
 /* Swiper */
 
-.swiper-slide {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex: 1 0 0;
-    align-self: stretch;
-}
+swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.swiper-pagination-bullet-active {
-    background-color: var(--base-color);
-}
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+  }
 
 
 .divider-2 {
