@@ -300,6 +300,28 @@ nav.show .icon-close {
     margin: 0 auto;
 }
 
+.benefits-credito img{
+    width: 54px;
+}
+
+.benefits-credito{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.benefits-credito h2{
+    font-size: 39px;
+}
+
+#direita{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 130%;
+    padding-left: 10px;
+}
+
 #benefits .benefits{
     display: flex;
     padding: 10px;
@@ -311,9 +333,10 @@ nav.show .icon-close {
     align-self: stretch;
 }
 
-#direita{
+/*#direita{
    text-align: right;
-}
+   float: right;
+} */
 
 .benefits h2{
     font-size: 39px;
@@ -325,16 +348,13 @@ nav.show .icon-close {
 }
 
 #benefits .imagem{
-    width: 584px;
-    height: 282px;
     flex-shrink: 0;
     border-radius: 18px;
-    background: linear-gradient(0deg, rgba(167, 232, 255, 0.10) 0%, rgba(167, 232, 255, 0.10) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
 #benefits .benefits img{
     width: 57px;
-    height: 6px;
+
 }
 
 #illustration{
@@ -395,6 +415,10 @@ swiper-slide {
 swiper-slide img {
     display: block;
     width: 100%;
+}
+
+.img-novidades{
+    width: 400px;
 }
 
 
@@ -461,8 +485,6 @@ swiper-slide img {
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
-    border-bottom: .4rem solid var(--base-color);
 }
 
 #team .card img {
@@ -482,11 +504,9 @@ swiper-slide img {
     text-align: center;
 
     /* Headers / H4 */
-    font-family: Fredoka One;
     font-size: 31px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 40.3px */
+    font-weight: 700;
 }
 #team p{
     color: #32394C;
