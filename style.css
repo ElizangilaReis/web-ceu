@@ -31,7 +31,7 @@ html {
     --title-color: var(--base-color-second);
     --text-color: #32394C;
     --text-color-light: #CED1D5;
-    --body-color:var(--color-white);
+    --body-color: whitesmoke;
    
 
     --title-font-size: 3rem;
@@ -80,12 +80,10 @@ body {
     background-color: var(--base-color-alt);
 }
 
-.divider-1 {
-    height: .1rem;
+.divider-2 {
+    height: .2rem;
     background: linear-gradient(
-        270deg, 
-        hsla(var(--hue), 36%, 57%, 1) 0%,
-        hsla(var(--hue), 65%, 88%, 0.34) 100%
+       var(--gradient-secondary) 100%
     );
 }
 
@@ -108,6 +106,7 @@ body {
     left: 0;
     z-index: 100;
     padding-top: 80px;
+    justify-content: space-between;
 }
 
 #header.scroll{
@@ -124,9 +123,9 @@ nav {
 
 nav .container{
     display: flex;
-    width: 1140px;
+    width: 100%;
     padding: 40px 0px;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
 }
 
@@ -312,6 +311,10 @@ nav.show .icon-close {
     align-self: stretch;
 }
 
+#direita{
+   text-align: right;
+}
+
 .benefits h2{
     font-size: 39px;
 }
@@ -377,9 +380,9 @@ swiper-container {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
+}
 
-  swiper-slide {
+swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
@@ -387,21 +390,13 @@ swiper-container {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  swiper-slide img {
+swiper-slide img {
     display: block;
     width: 100%;
-  }
-
-
-.divider-2 {
-    height: .1rem;
-    background: linear-gradient(270deg, 
-    hsla(var(--hue), 65%, 88%, 0.34),
-    hsla(var(--hue), 36%, 57%, 1)
-    );
 }
+
 
 /* Services */
 
@@ -571,6 +566,7 @@ line-height: 130%; /* 50.7px */
 
 /* FAQ */
 .faq{
+    width: 1120px;
     display: flex;
     padding: 10px;
     flex-direction: column;
@@ -619,42 +615,57 @@ line-height: 130%; /* 50.7px */
 }
 /* Footer */
 
+/* Estilo para o rodapé (footer) */
 footer {
-    background-color: var(--color-white);
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Estilo para a seção de newsletter */
+  .newsletter {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Estilo para o menu de rodapé */
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-menu li {
+    margin: 0 10px;
+  }
+
+  /* Estilo para o campo de inscrição na newsletter */
+  .newsletter-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .newsletter-button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+footer {
+    background-color: var(--base-color);
 
 }
 
 footer.section {
     padding: 6.4rem 0;
-}
-
-footer .logo {
-    display: inline-block;
-    margin-bottom: 2.4rem;
-}
-
-footer .brand p {
-    margin-bottom: 1.2rem;
-    color: var(--text-color-light);
-}
-
-footer i {
-    font-size: 2.4rem;
-    color: var(--text-color-light);
-
-}
-
-footer .social{
-    display: flex;
-    gap: 3.2rem;
-}
-
-footer .social a {
-    transition: .3s;   
-}
-
-footer .social a:hover {
-    transform: translateY(-15px);
 }
 
 /* Back to Top */
