@@ -593,12 +593,18 @@ swiper-slide img {
     display: flex;
     padding: 10px;
     flex-direction: column;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex: 1 0 0;
     background: var(--gradient-secondary);
 }
+
+.down-ico{
+    width: 20px;
+}
+
 .accordion {
     max-width: auto;
     margin: 0 auto;

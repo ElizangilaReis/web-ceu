@@ -124,12 +124,16 @@ function activateMenuAtCurrentSection() {
 function clickAccordion(t){
     var pai = document.getElementsByClassName('accordion-title')[t].parentElement;
     var conteudo = pai.lastElementChild.classList.contains('hide');
-
-    if(conteudo == true){
+    let icone = pai.querySelector('.down-ico');
+    
+    if(conteudo){
+        icone.style.transform = "rotate(180deg)"
         pai.lastElementChild.className="show";
     }else{
+        icone.style.transform = "rotate(0deg)"
         pai.lastElementChild.className="hide";
     }
+
 }
 
 
