@@ -533,23 +533,46 @@ swiper-slide img {
 
 #contact{
     width: 100%;
-    background-image: url(compress-img/Positivon\ Absolute\ -\ Airplane.png);
 }
 
 #contact .grid {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    height: 300px;
     background: var(--gradient-secondary);
+}
+
+.airplane-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+.button-airplane{
+    padding: 14px;
+    background-color: #32394C;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
 }
 
 #contact .text p {
     color: var(--text-color);
 }
 
-#contact .text h2{
+.text-airplane{
+    width: 100%;
+    padding-left: 18px;
+}
+.text-airplane p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#contact .text-airplane h2{
     color: var(--text-color);
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 20px;
 }
 
 .airplace{
