@@ -119,6 +119,20 @@ function activateMenuAtCurrentSection() {
 
 }
 
+// Accordion
+
+function clickAccordion(t){
+    var pai = document.getElementsByClassName('accordion-title')[t].parentElement;
+    var conteudo = pai.lastElementChild.classList.contains('hide');
+
+    if(conteudo == true){
+        pai.lastElementChild.className="show";
+    }else{
+        pai.lastElementChild.className="hide";
+    }
+}
+
+
 // Ao Scrollar
 
 window.addEventListener('scroll', function() {
