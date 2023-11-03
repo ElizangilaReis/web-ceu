@@ -56,6 +56,7 @@ body {
     background-image: url(compress-img/Postion\ Absolute\ -\ bg-01\ headerbg1-min.png);
     background-repeat: no-repeat;
     background-position: top left;
+    overflow-x: hidden;
 }
 
 .title {
@@ -82,10 +83,11 @@ body {
 }
 
 .divider-2 {
-    height: .2rem;
-    background: linear-gradient(
-       var(--gradient-secondary) 100%
-    );
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
 }
 
 .container {
@@ -643,15 +645,70 @@ swiper-slide img {
 
 /* Estilo para o rodapé (footer) */
 footer {
-    background-color: #333;
+    background-color: #002D74;
     color: #fff;
-    padding: 20px;
+    
     text-align: center;
+  }
+
+  .footer-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .credits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+  }
+
+  .barra-footer{
+    background-color: #fff;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .newsletter h3{
+    font-size: 20px;
+  }
+
+  .newsletter-box{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter p{
+    font-size: 14px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 400;
+    line-height: 24px; 
+    padding: 10px 0 10px 0;
+  }
+
+  .box-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-footer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   /* Estilo para a seção de newsletter */
   .newsletter {
-    text-align: center;
     margin-bottom: 20px;
   }
 
@@ -659,36 +716,46 @@ footer {
   .footer-menu {
     list-style: none;
     padding: 0;
-    display: flex;
     justify-content: center;
+    text-align: justify;
   }
 
   .footer-menu li {
-    margin: 0 10px;
+    padding-bottom: 8px;
+    margin: 0;
+  }
+
+  .footer-menu li a{
+    color: whitesmoke;
+    font-weight: 100;
   }
 
   /* Estilo para o campo de inscrição na newsletter */
   .newsletter-input {
     width: 100%;
-    max-width: 300px;
     padding: 10px;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+  }
+
+  .newsletter-input::placeholder{
+    color: whitesmoke;
+    font-weight: 100;
   }
 
   .newsletter-button {
-    background-color: #0073e6;
-    color: #fff;
+    background-color: #fff;
+    color: #545454;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px;
+    width: 140px;
     cursor: pointer;
+    margin-left: 27px;
   }
-
-footer {
-    background-color: var(--base-color);
-
-}
 
 footer.section {
     padding: 6.4rem 0;
