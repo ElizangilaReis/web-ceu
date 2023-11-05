@@ -104,11 +104,11 @@ body {
    /* border-bottom: .1rem solid #E4E4E4; */
     margin-bottom: 2rem;
     display: flex;
-    width: 100%;
+    width: 1440px;
     top: 0;
     left: 0;
     z-index: 100;
-    padding-top: 80px;
+    padding-top: 40px;
     justify-content: space-between;
 }
 
@@ -121,15 +121,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 1440px;
 }
 
 nav .container{
     display: flex;
-    width: 100%;
+    width: 1440px;
     padding: 40px 0px;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items:center;
 }
 
 
@@ -240,8 +240,10 @@ nav.show .icon-close {
     display: flex;
     padding: 40px 0px 80px 0px;
     justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
+    align-items: center;
+    align-self: center;
+    align-content: space-between;
+    width: 1440px;
 }
 
 #home .container {
@@ -269,6 +271,7 @@ nav.show .icon-close {
 #home .image img {
     position: relative;
     right: 4.7rem;
+    width: 80%;
 }
 
 #home .image img, 
@@ -432,6 +435,9 @@ swiper-slide img {
 
 
 /* Services */
+#services{
+    padding: 0px 0px 80px 0px;
+}
 
 #services .cards.grid {
    /*  gap: 2.4rem;*/
@@ -651,8 +657,8 @@ swiper-slide img {
 
 /* Estilo para o rodapé (footer) */
 footer {
-    background-color: #002D74;
-    color: #fff;
+    background-color:var(--base-color);
+    color: var(--color-white);
     
     text-align: center;
   }
@@ -661,8 +667,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1200px;
+    width: 1440px;
     margin: 0 auto;
+    box-sizing: content-box;
   }
 
   .credits{
@@ -670,6 +677,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 300px;
+    box-sizing: content-box;
   }
 
   .barra-footer{
@@ -765,6 +773,12 @@ footer {
 
 footer.section {
     padding: 6.4rem 0;
+}
+
+#icone{
+    justify-content: space-between;
+    display: inline-flex;
+    padding: 20px;
 }
 
 /* Back to Top */
