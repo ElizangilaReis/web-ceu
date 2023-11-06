@@ -82,6 +82,10 @@ body {
     background-color: var(--base-color-alt);
 }
 
+.button a{
+    color: var(--body-color);
+}
+
 .divider-2 {
     display: flex;
     align-items: center;
@@ -175,7 +179,7 @@ nav .menu {
 }
 
 .menu{
-    background-color: #FFFFFF;
+    background-color: var(--body-color);
     padding: 20px;
     border-radius: 8px;
 }
@@ -244,7 +248,7 @@ nav.show .icon-close {
     align-items: center;
     align-self: center;
     align-content: space-between;
-    width: 1440px;
+    width: 100%;
 }
 
 #home .container {
@@ -605,7 +609,7 @@ swiper-slide img {
 /* FAQ */
 
 .faq{
-    width: 620px;
+    width: 1120px;
     border-radius: 16px;
     display: flex;
     padding: 10px;
@@ -629,7 +633,7 @@ swiper-slide img {
   
 .accordion-title {
     color: var(--color-black);
-    width: 600px;
+    width: 1100px;
     height: 60px;
     padding: 10px;
     box-sizing: border-box;
