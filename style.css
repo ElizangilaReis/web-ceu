@@ -88,6 +88,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 20px;
+    margin: 0 auto;
 }
 
 .container {
@@ -602,8 +603,10 @@ swiper-slide img {
 }
 
 /* FAQ */
+
 .faq{
-    width: 1120px;
+    width: 620px;
+    border-radius: 16px;
     display: flex;
     padding: 10px;
     flex-direction: column;
@@ -778,7 +781,10 @@ footer.section {
 #icone{
     justify-content: space-between;
     display: inline-flex;
-    padding: 20px;
+}
+
+#icone a{
+    padding-left: 17px;
 }
 
 /* Back to Top */
