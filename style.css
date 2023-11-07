@@ -346,6 +346,7 @@ nav.show .icon-close {
 
 .benefits-credito img{
     width: 54px;
+    padding-bottom: 20px;
 }
 
 .benefits-credito{
@@ -357,12 +358,16 @@ nav.show .icon-close {
 
 .benefits-credito p{
     font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
     line-height: 130%;
 }
 
-
 .benefits-credito h2{
+    font-family: Fredoka;
     font-size: 39px;
+    font-weight: 700;
+    padding-bottom: 20px;
 }
 
 #direita{
@@ -389,11 +394,15 @@ nav.show .icon-close {
 } */
 
 .benefits h2{
+    font-family: Fredoka;
     font-size: 39px;
+    font-weight: 700;
 }
 
 .benefits p{
     font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
     line-height: 130%;
 }
 
@@ -421,6 +430,9 @@ nav.show .icon-close {
 }
 
 .size-title{
+    font-size: 39px;
+    text-align: center;
+    font-family: Fredoka;
     font-size: 39px;
 }
 
@@ -487,9 +499,10 @@ swiper-slide img {
 }
 
 #services .card {
-    width: 306px;
-    height: 288px;
+    width: 448px;
+    height: 394px;
     display: flex;
+    padding: 0 14px 0 14px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -521,8 +534,12 @@ swiper-slide img {
 
 #services .card p{
     font-size: 16px;
+    padding-top: 40px;
     text-align: center;
-    color: var(--base-color-dart);
+    font-family: Montserrat;
+    color: #00217E;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 #team .cards.grid {
