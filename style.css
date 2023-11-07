@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
     margin: 0;
@@ -80,6 +81,25 @@ body {
     font-weight: bold;
     transition: background 0.3s;
     font-family: Fredoka;
+}
+
+.button-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 20px;
+    background: var(--gradient-secondary, linear-gradient(180deg, #0092DC 0%, #D7F5FF 100%));
+    display: inline-flex;
+    border-radius: .4rem;
+    font-size: 20px;
+    font-weight: 400;
+    transition: background 0.3s;
+    font-family: Montserrat;
+}
+
+.button-header a{
+    color: #32394C;
 }
 
 .button:hover {
@@ -186,7 +206,7 @@ nav .menu {
 }
 
 .menu{
-    background-color: #FFFFFF;
+    background-color: whitesmoke;
     padding: 20px;
     border-radius: 8px;
 }
