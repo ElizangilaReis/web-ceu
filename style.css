@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -69,17 +71,20 @@ body {
 .button {
     display: flex;
     align-items: center;
-    padding: 1.4rem 3.2rem 1.5rem;
-    background-color: var(--base-color);
-    color: var(--text-color-light);
+    padding: 16px 48px;
+    background-color: #fff;
+    color: #32394C;
     display: inline-flex;
     border-radius: .4rem;
-    font: 500 1.6rem var(--body-font);
+    font-size: 16px;
+    font-weight: bold;
     transition: background 0.3s;
+    font-family: Fredoka;
 }
 
 .button:hover {
     background-color: var(--base-color-alt);
+    color: #fff;
 }
 
 .divider-2 {
@@ -167,6 +172,8 @@ nav ul li a.active::after {
     
 }
 
+
+
 nav .menu {
     opacity: 0;
     visibility: hidden;
@@ -175,7 +182,7 @@ nav .menu {
 }
 
 .menu{
-    background-color: #FFFFFF;
+    background-color: whitesmoke;
     padding: 20px;
     border-radius: 8px;
 }
@@ -282,7 +289,7 @@ nav.show .icon-close {
 
 #home .text {
     display: flex;
-    padding: 10px;
+  
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -293,9 +300,15 @@ nav.show .icon-close {
     margin-bottom: 1.6rem;
 }
 
+#title-home{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 39px;
+}
+
 #home .text p {
-    margin-bottom: 3.2rem;
     max-width: 100%;
+    font-size: 20px;
 }
 
 #benefits{
