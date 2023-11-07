@@ -430,7 +430,6 @@ nav.show .icon-close {
 }
 
 .size-title{
-    font-size: 39px;
     text-align: center;
     font-family: Fredoka;
     font-size: 39px;
@@ -487,6 +486,7 @@ swiper-slide img {
 /* Services */
 #services{
     padding: 0px 0px 80px 0px;
+    background-color: #F0F1F3;
 }
 
 #services .cards.grid {
@@ -551,13 +551,29 @@ swiper-slide img {
     gap: 10px;
 }
 
+#rede-social-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-social{
+    font-size: 30px;
+    padding: 12px 14px 0 0;
+    color: #32394C;
+}
+
+.icone-social:hover{
+    color: #32394cc3;
+}
+
 #team .card {
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-#team .card img {
+#team .card .img-member {
     display: flex;
     width: 250px;
     height: 250px;
@@ -574,6 +590,7 @@ swiper-slide img {
     text-align: center;
 
     /* Headers / H4 */
+    font-family: Fredoka;
     font-size: 31px;
     font-style: normal;
     font-weight: 700;
@@ -581,7 +598,10 @@ swiper-slide img {
 #team p{
     color: var(--text-color);
     text-align: center;
+    font-family: Montserrat;
     font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
 }
 
 /*.social{
@@ -620,7 +640,7 @@ swiper-slide img {
     padding: 14px;
     background-color: #32394C;
     color: #fff;
-    font-weight: bold;
+    font-family: Fredoka;
     border-radius: 8px;
 }
 
@@ -634,12 +654,15 @@ swiper-slide img {
 }
 .text-airplane p{
     padding-top: 20px;
+    font-family: Montserrat;
     font-size: 20px;
+    font-weight: 400;
 }
 
 #contact .text-airplane h2{
     color: var(--text-color);
     font-weight: 700;
+    font-family: Fredoka;
     font-size: 40px;
     padding-bottom: 20px;
 }
@@ -682,7 +705,7 @@ swiper-slide img {
 }
   
 .accordion-title {
-    color: var(--color-black);
+    color: #32394C;
     width: 1100px;
     height: 60px;
     padding: 10px;
@@ -691,6 +714,10 @@ swiper-slide img {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+}
+
+.accordion-title h3{
+    font-family: Fredoka;
 }
 
 .section-section1 p{
