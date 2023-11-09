@@ -704,10 +704,9 @@ swiper-slide img {
 /* FAQ */
 
 .faq{
-    width: 600px;
+    width: 100%;
     border-radius: 16px;
     display: flex;
-    padding: 10px;
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
@@ -725,15 +724,14 @@ swiper-slide img {
 }
 
 .accordion {
-    max-width: auto;
+    width: 100%;
     margin: 0 auto;
 }
   
 .accordion-title {
     color: #32394C;
-    width: 600px;
+    width: 100%;
     height: 60px;
-    padding: 10px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -746,7 +744,7 @@ swiper-slide img {
 }
 
 .section-section1 p{
-    width: 600px;
+    width: 100%;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -1107,13 +1105,90 @@ footer.section {
 
     .size-title{
         font-size: 2em;
-    }    
-
-    /*SCREENS MOBILE*/
-    @media (max-width: 480px) {
-        .section {
-          font-size: 16px;
-          background: red;
-        }
-      }
+    }
 }
+
+/*SCREENS MOBILE*/
+@media screen and (max-width: 480px) {
+    .section {
+      background: red;
+      width: 84%;
+    }
+
+    .cards1{
+        flex-direction: column;
+        background-color: green;
+    }
+
+    .img-banner{
+        width: 80%;
+    }
+
+    .img-descontos{
+        width: 50%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    #home-image{
+        display: none;
+    }
+
+    #benefits{
+        background-color: green;
+        flex-direction: column;
+    }
+
+    .cards{
+       flex-direction: column;
+    }
+
+    #contact .grid{
+        height: 400px;
+        background-size: 100%;
+        background-size: cover;
+    }
+
+    .airplace{
+        display: none;
+    }
+
+    .text-airplane{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .accordion-title h3{
+        font-size: 1em;
+    }
+
+    .down-ico{
+        width: 12px;
+    }
+
+    .size-title {
+        font-size: 2em;
+    }
+
+    .geral h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .benefits p{
+        font-size: 0.7em;
+    }
+
+    body{
+        overflow-x: none;
+    }
+  }
