@@ -17,7 +17,6 @@ a {
 
 img {
     width: 100%;
-    height: auto;
 }
 
 html {
@@ -54,12 +53,22 @@ span {
 body {
     font: 400 1.6rem var(--body-font);
     color: var(--text-color);
-    background-color: var(--body-color);
+    background-color: var(--color-white);
     -webkit-font-smoothing: antialiased;
     background-image: url(compress-img/Postion\ Absolute\ -\ bg-01\ headerbg1-min.png);
     background-repeat: no-repeat;
     background-position: top left;
     overflow-x: hidden;
+    background-size: 85%;
+}
+.logo{
+    width: 10%;
+}
+
+.section{
+    width: 84%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .title {
@@ -87,8 +96,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    padding: 20px;
+    width: 150px;
+    padding: 10px;
     background: var(--gradient-secondary, linear-gradient(180deg, #0092DC 0%, #D7F5FF 100%));
     display: inline-flex;
     border-radius: .4rem;
@@ -134,7 +143,6 @@ body {
    /* border-bottom: .1rem solid #E4E4E4; */
     margin-bottom: 2rem;
     display: flex;
-    width: 1440px;
     top: 0;
     left: 0;
     z-index: 100;
@@ -151,7 +159,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1440px;
+    width: 84%;
 }
 
 nav .container{
@@ -165,6 +173,7 @@ nav .container{
 
 nav ul li {
     text-align: center;
+    justify-content: center;
 }
 
 nav ul li a {
@@ -198,21 +207,18 @@ nav ul li a.active::after {
 
 
 
-nav .menu {
+/*nav .menu {
     opacity: 0;
     visibility: hidden;
     top: -32rem;
     transition: .5s;
-}
+}*/
 
 .menu{
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-nav .menu ul {
-    display: none;
+    background-color: var(--color-white);
+    padding: 14px;
+    border-radius: 8px 0 0 8px;
+    width: 70%;
 }
 
 nav.show ul.grid {
@@ -270,19 +276,20 @@ nav.show .icon-close {
 #home {
     /*overflow: hidden;*/
     display: flex;
-    padding: 40px 0px 80px 0px;
-    justify-content: center;
+   padding: 0 0px 80px 0px;
     align-items: center;
-    align-self: center;
-    align-content: space-between;
-    width: 100%;
+    justify-content: center;
 }
 
 #home .container {
     margin: 0;
 }
 
-#home .image {
+#home-image{
+    width: 50%;
+}
+
+/*#home .image {
     display: inline-flex;
     padding: 10px;
     flex-direction: column;
@@ -309,11 +316,10 @@ nav.show .icon-close {
 #home .image img, 
 #home .image::before {
     border-radius: .4rem;
-}
+}*/
 
 #home .text {
     display: flex;
-  
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -337,7 +343,7 @@ nav.show .icon-close {
 
 #benefits{
     display: flex;
-    width: 1140px;
+    width: 84%;
     padding: 80px 0px;
     justify-content: flex-end;
     align-items: center;
@@ -397,6 +403,7 @@ nav.show .icon-close {
     font-family: Fredoka;
     font-size: 39px;
     font-weight: 700;
+    text-align: left;
 }
 
 .benefits p{
@@ -404,6 +411,8 @@ nav.show .icon-close {
     font-family: Montserrat;
     font-weight: 400;
     line-height: 130%;
+    text-align: left;
+    padding-right: 4px;
 }
 
 #benefits .imagem{
@@ -413,7 +422,6 @@ nav.show .icon-close {
 
 #benefits .benefits img{
     width: 57px;
-
 }
 
 #illustration{
@@ -423,6 +431,10 @@ nav.show .icon-close {
 
 .img-banner{
     width: 1070px;
+}
+
+.img-descontos{
+    width: 584px;
 }
 
 #section-video h2{
@@ -448,7 +460,7 @@ nav.show .icon-close {
 /* Vídeo */
 .video{
     display: flex;
-    width: 1140px;
+    width: 84%;
     padding: 80px 0px;
     justify-content: center;
     align-items: center;
@@ -479,28 +491,18 @@ swiper-slide img {
 }
 
 .img-novidades{
-    width: 400px;
+    width: 90%;
 }
 
 
 /* Services */
 #services{
     padding: 0px 0px 80px 0px;
-    background-color: #F0F1F3;
 }
 
-#services .cards.grid {
-   /*  gap: 2.4rem;*/
-    display: flex;
-    width: 1144px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 25px;
-}
-
-#services .card {
-    width: 448px;
-    height: 394px;
+#services .card1 {
+    width: 300px;
+    height: 300px;
     display: flex;
     padding: 0 14px 0 14px;
     align-items: center;
@@ -512,60 +514,60 @@ swiper-slide img {
     background-blend-mode: overlay, normal;
     backdrop-filter: blur(40px);
     border-radius: 30px;
+    margin: 15px;
     text-align: center;
 }
 
 .img-card-services{
-    width: 90px;
+    width: 50px;
 }
 
-#services .card img {
-    display: block;
-    margin-bottom: 1.2rem;
-    font-size: 8rem;
-    color: var(--base-color);
-}
 
-#services .card .title {
-    font-size: 22px;
+
+#services .card1 .title {
+    font-size: 20px;
     margin-bottom: 1.2rem;
 }
 
 
-#services .card p{
-    font-size: 16px;
-    padding-top: 40px;
+#services .card1 p{
+    font-size: 12px;
     text-align: center;
     font-family: Montserrat;
     color: #00217E;
     font-weight: 400;
     line-height: 24px;
 }
+.cards1{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    text-align: center;
+    margin: 0 auto;
+    width: 84%;
+}
 
 #team .cards.grid {
     display: flex;
-    width: 1140px;
     padding: 0px 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-#rede-social-team{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.icone-social{
-    font-size: 30px;
-    padding: 12px 14px 0 0;
-    color: #32394C;
-}
-
-.icone-social:hover{
-    color: #32394cc3;
-}
 
 #team .card {
     text-align: center;
@@ -575,8 +577,7 @@ swiper-slide img {
 
 #team .card .img-member {
     display: flex;
-    width: 250px;
-    height: 250px;
+    width: 60%;
     padding: 10px;
     flex-direction: column;
     justify-content: center;
@@ -591,7 +592,7 @@ swiper-slide img {
 
     /* Headers / H4 */
     font-family: Fredoka;
-    font-size: 31px;
+    font-size: 1.3em;
     font-style: normal;
     font-weight: 700;
 }
@@ -599,9 +600,25 @@ swiper-slide img {
     color: var(--text-color);
     text-align: center;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 0.9em;
     font-weight: 400;
     padding-top: 10px;
+}
+
+#rede-social-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-social{
+    font-size: 1.7em;
+    padding: 12px 14px 0 0;
+    color: #32394C;
+}
+
+.icone-social:hover{
+    color: #32394cc3;
 }
 
 /*.social{
@@ -619,14 +636,17 @@ swiper-slide img {
 
 
 /* Contact */
-
-#contact{
-    width: 100%;
+#contact .grid {
+    height: 330px;
+    background-image: url(compress-img/banner1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 
-#contact .grid {
-    height: 300px;
-    background: var(--gradient-secondary);
+.img-aviao{
+    width: 10%;
 }
 
 .airplane-banner{
@@ -649,8 +669,10 @@ swiper-slide img {
 }
 
 .text-airplane{
-    width: 100%;
+    width: 600px;
     padding-left: 18px;
+    align-items: center;
+    text-align: left;
 }
 .text-airplane p{
     padding-top: 20px;
@@ -682,7 +704,7 @@ swiper-slide img {
 /* FAQ */
 
 .faq{
-    width: 1120px;
+    width: 600px;
     border-radius: 16px;
     display: flex;
     padding: 10px;
@@ -692,7 +714,10 @@ swiper-slide img {
     align-items: center;
     gap: 20px;
     flex: 1 0 0;
-    background: var(--gradient-secondary);
+    background-image: url(compress-img/logo-logo.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
 }
 
 .down-ico{
@@ -706,7 +731,7 @@ swiper-slide img {
   
 .accordion-title {
     color: #32394C;
-    width: 1100px;
+    width: 600px;
     height: 60px;
     padding: 10px;
     box-sizing: border-box;
@@ -743,15 +768,18 @@ swiper-slide img {
 footer {
     background-color:var(--base-color);
     color: var(--color-white);
-    
     text-align: center;
   }
 
+  .icone-footer{
+    color: var(--color-white);
+    font-size: 24px;
+  }
+
   .footer-elements{
+    padding-top: 30px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 1440px;
     margin: 0 auto;
     box-sizing: content-box;
   }
@@ -760,8 +788,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 300px;
-    box-sizing: content-box;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .barra-footer{
@@ -798,11 +826,21 @@ footer {
   }
 
   .nav-footer{
-    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-footer-links{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
   }
 
   /* Estilo para a seção de newsletter */
@@ -821,10 +859,11 @@ footer {
   .footer-menu li {
     padding-bottom: 8px;
     margin: 0;
+    font-size: 14px;
   }
 
   .footer-menu li a{
-    color: whitesmoke;
+    color: rgba(255, 255, 255, 0.60);
     font-weight: 100;
   }
 
@@ -873,18 +912,14 @@ footer.section {
 .back-to-top {
     background-color: var(--base-color-dart);
     color: #fff;
-
     position: fixed;
     right: 1.6rem;
     bottom: 1.6rem;
-
     padding: .8rem;
     clip-path: circle();
     line-height: 0;
-
     visibility: hidden;
     opacity: 0;
-
     transition: .3s;
     transform: translateY(100%);
 }
@@ -955,13 +990,13 @@ footer.section {
         margin: 0 auto; 
     }
 
-    #home .image {
-        order: 1;
+    .banner-home{
+        width: 80%;
+        display: flex;
+        
+        justify-content: space-between;
     }
-    
-    #home .image::before {
-        right: -2.7%;
-    }
+
     
     #home .text {
         order: 0;
@@ -1025,5 +1060,52 @@ footer.section {
 
 /*SCREENS LAPTOPS*/
 @media screen and (min-width: 960px) {
+    #header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-banner{
+        width: 70%;
+    }
+
     
+
+    /*FOOTER*/
+    .newsletter-button{
+        width: 161px;
+    
+    }
+
+    footer{
+        height: 300px;
+    }
+
+    #icone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-menu{
+        padding-top: 10px;
+    }
+
+    .credits{
+       text-align: center;
+       width: 90%;
+    }
+
+    .size-title{
+        font-size: 2em;
+    }    
 }

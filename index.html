@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="compress-img/logo-mobile.png" sizes="64x64" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     
 
@@ -21,37 +20,34 @@
 <body>
 
     <header id="header">
-        <nav class="container">
-            <div class="logo">
-                <a href="#"><img src="compress-img/svg/Logo.svg" alt="CEU"></a>
-            </div>
-            <div class="menu">
-                <ul class="grid">
-                    <li><a href="#home" class="title">Home</a></li>
-                    <li><a href="#services" class="title">Serviços</a></li>
-                    <li><a href="#parceiros" class="title">Parceiros</a></li>
-                    <li><a href="#novidades" class="title">Novidades</a></li>
-                    <li><a href="#ceu" class="title">Sobre o CEU</a></li>
-                    <li><a href="#contactos" class="title">Contactos</a></li>
-                </ul>
-            </div>
-            <div class="toggle icon-menu"></div>
-            <div class="toggle icon-close"></div>
-            <div class="button-header">
-                <a href="http://" target="_blank">Se inscreva</a>
-            </div>
-        </nav>
-        
+        <div id="nav-menu">
+            <nav class="">
+                <div class="logo">
+                    <a href="#"><img src="compress-img/svg/Logo.svg" alt="CEU"></a>
+                </div>
+                <div class="menu">
+                    <ul class="grid">
+                        <li><a href="#home" class="title">Home</a></li>
+                        <li><a href="#services" class="title">Serviços</a></li>
+                        <li><a href="#parceiros" class="title">Parceiros</a></li>
+                        <li><a href="#novidades" class="title">Novidades</a></li>
+                        <li><a href="#ceu" class="title">Sobre o CEU</a></li>
+                        <li><a href="#contactos" class="title">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="toggle icon-menu"></div>
+                <div class="toggle icon-close"></div>
+                <div class="button-header">
+                    <a href="http://" target="_blank">Se inscreva</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
 
         <section class="section" id="home">
-            <div class="container grid">
-                <div class="image">
-                    <img src="compress-img/Group 663CEU APP e CARD-min.png"
-                    alt="app ceu"/>
-                </div>
+            <div class="banner-home">
                 <div class="text">
                     <p>Bem-vindo ao CEU.</p>
                     <h2 id="title-home">
@@ -62,15 +58,18 @@
                     <p>CEU, mais próximo do futuro!</p>
                     <a href="" class="button">Saiba mais</a>
                 </div>
+
+                
+                    <img id="home-image" src="compress-img/Group 663CEU APP e CARD-min.png"
+                    alt="app ceu"/>
+                
             </div>
         </section>
 
-        <!-- <div class="divider-1"></div> -->
-
         <section class="section" id="services">
             <div class="container grid">
-                <div class="cards grid">
-                    <div class="card">
+                <div class="cards1">
+                    <div class="card1">
                         <img class="img-card-services" src="compress-img/svg/money-bank.svg" alt="">
                         <h3 class="title">Abertura de Conta Bancária</h3>
                         <p>
@@ -80,7 +79,7 @@
                             oferecer.
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card1">
                         <img class="img-card-services" src="compress-img/svg/uiw_safety3.svg" alt="">
                         <h3 class="title">Cartão Multicaixa</h3>
                         <p>
@@ -90,7 +89,7 @@
                             uma porta aberta para o sucesso.
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card1">
                         <img class="img-card-services" src="compress-img/svg/uiw3_safety.svg" alt="">
                         <h3 class="title">Cartão de Descontos</h3>
                         <p>
@@ -104,9 +103,11 @@
             </div>
         </section>
 
-        <div class="section" id="illustration">
-            <img class="img-banner" src="compress-img/img-brevemente.png" alt="">
-        </div>
+        <section class="section">
+            <div id="illustration">
+                <img class="img-banner" src="compress-img/img-brevemente.png" alt="">
+            </div>
+        </section>
 
         <section class="section" id="benefits">
             <div class="benefits">
@@ -118,13 +119,13 @@
                 </p>
             </div>
             <div class="imagem">
-                <img src="compress-img/descontos-min.png" alt="">
+                <img class="img-descontos" src="compress-img/descontos-min.png" alt="">
             </div>
         </section>
 
         <section class="section" id="benefits">
             <div class="imagem">
-                <img src="compress-img/credito-min.png" alt="">
+                <img class="img-descontos" src="compress-img/credito-min.png" alt="">
             </div>
             <div class="benefits-credito">
                 <img src="compress-img/Rectangulo Vantagens-min.png" alt="">
@@ -189,14 +190,10 @@
             </div>
         </section>
 
-        <section class="section" id="novidades">
-            <header>
-                <h2 class="title size-title">Novidades</h2>
-            </header>
-        </section>
-        
         <section class="section" id="benefits">
+            
             <div class="benefits">
+                <h2 class="title size-title">Novidades</h2>
                 <img src="compress-img/Rectangulo Vantagens-min.png" alt="">
                 <h2>21 Setembro<br>
                     Encontro Intimista Reúne Calouros e 
@@ -319,13 +316,11 @@
             </div>
         </section>
 
-        <div class="divider-2"></div>
-
         <section class="section" id="contact">
             <div class="container grid">
                 <div class="airplane-banner">
                     <div class="airplace">
-                        <img src="compress-img/Positivon Absolute - Airplane.png" alt="">
+                        <img src="compress-img/Positivon Absolute - Airplane.png" alt="" class="img-aviao">
                     </div>
             
                     <div class="text-airplane">
@@ -378,12 +373,9 @@
                 </div>                
             </div>
         </section>
-
-        <div class="divider-1"></div>
-
-        </main>
-    <footer class="section footer" id="contactos">
-        <div class="footer-elements">
+    </main>
+    <footer class="footer" id="contactos">
+        <div class="section footer-elements">
             <div class="newsletter newsletter-box">
                 <h3>Inscreva-se em nossa newsletter</h3>
                 <p>Não perca as oportunidades exclusivas e informações valiosas para impulsionar sua jornada universitária. Inscreva-se em nossa newsletter e esteja sempre um passo à frente!</p>
@@ -393,22 +385,23 @@
                 </form>
             </div>
             <div class="nav-footer">
-                <h3>Menu</h3>
-                <ul class="footer-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Parceiros</a></li>
-                    <li><a href="#">Novidades</a></li>
-                </ul>
-            </div>
-
-            <div class="nav-footer">
-                <h3>Ajuda</h3>
-                <ul class="footer-menu">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Suporte</a></li>
-                    <li><a href="#">Contactos</a></li>
-                </ul>
+                <div class="nav-footer-links">
+                    <h3>Menu</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                        <li><a href="#">Novidades</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer-links">
+                    <h3>Ajuda</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         
@@ -418,14 +411,10 @@
                 <div>
                     <p>&copy; 2023 CEU. Todos os direitos reservados.</p>
                 </div>
-                <div>
-                    <p>Privacidade e Política</p>
-                </div>
-
                 <div id="icone">
-                    <a href="#"><img src="compress-img/svg/facebook-svgrepo-com 2.svg" alt=""></a>
-                    <a href="#"><img src="compress-img/svg/instagram-svgrepo-com 2.svg" alt=""></a>
-                    <a href="#"><img src="compress-img/svg/linkedin.svg" alt=""></a>
+                    <a href="#"><i class="fa-brands icone-footer fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands icone-footer fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands icone-footer fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -436,7 +425,6 @@
     <!--CONFIG SLIDES CARROSEL-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
 </body>
