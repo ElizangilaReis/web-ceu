@@ -1113,6 +1113,8 @@ footer.section {
     .section {
       background: red;
       width: 84%;
+      margin: 0 auto;
+      text-align: center;
     }
 
     .cards1{
