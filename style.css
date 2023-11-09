@@ -1196,8 +1196,8 @@ footer.section {
     }
 
     #services .card1{
-        width: 250px;
-        height: 250px;
+        width: 210px;
+        height: 210px;
     }
 
     .img-card-services{
@@ -1205,11 +1205,11 @@ footer.section {
     }
 
     #services .card1 .title {
-        font-size: 1em;
+        font-size: 0.7em;
     }
 
     #services .card1 p{
-        font-size: 0.7em;
+        font-size: 0.5em;
         line-height: 15px;
     }
   }
