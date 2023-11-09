@@ -78,7 +78,7 @@ scrollReveal.reveal(`
     { interval: 100}
 )
 
-// Back to Top
+/* Back to Top
 
 const backToTop = document.querySelector('a.back-to-top')
 const about = document.querySelector("#services")
@@ -92,6 +92,7 @@ function backToTheTop () {
         backToTop.classList.remove('show')
     }
 }
+*/
 
 // Menu ativo conforme ativo na página
 

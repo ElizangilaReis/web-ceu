@@ -913,7 +913,7 @@ footer.section {
     padding-left: 17px;
 }
 
-/* Back to Top */
+/* Back to Top 
 
 .back-to-top {
     background-color: var(--base-color-dart);
@@ -935,6 +935,8 @@ footer.section {
     opacity: 1;
     transform: translateY(0);
 }
+
+*/
 
 /* Responsivo */
 
