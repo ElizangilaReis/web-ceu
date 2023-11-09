@@ -1361,6 +1361,7 @@ footer.section {
   .topnav {
     overflow: hidden;
     background-color: #333;
+    width: 100%;
   }
   .topnav .icon {
     display: none;
