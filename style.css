@@ -1108,4 +1108,12 @@ footer.section {
     .size-title{
         font-size: 2em;
     }    
+
+    /*SCREENS MOBILE*/
+    @media (max-width: 480px) {
+        .section {
+          font-size: 16px;
+          background: red;
+        }
+      }
 }
