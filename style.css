@@ -276,7 +276,7 @@ nav.show .icon-close {
 #home {
     /*overflow: hidden;*/
     display: flex;
-    padding: 0 0px 80px 0px;
+    padding: 0px 0px 80px 0px;
     align-items: center;
     justify-content: center;
 }
@@ -288,35 +288,6 @@ nav.show .icon-close {
 #home-image{
     width: 50%;
 }
-
-/*#home .image {
-    display: inline-flex;
-    padding: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 48px;
-}
-
-#home .image::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -16.8%;
-    right: -16.7%;
-    z-index: -1;
-}
-
-#home .image img {
-    position: relative;
-    right: 4.7rem;
-    width: 80%;
-}
-
-#home .image img, 
-#home .image::before {
-    border-radius: .4rem;
-}*/
 
 #home .text {
     display: flex;
@@ -355,13 +326,14 @@ nav.show .icon-close {
 
 .topnav.responsive a{
     float: none;
+    align-items: center;
     display: block;
-    text-align: center;
+    text-align: left;
+    z-index: 999;
 }
 
 .logo-mobile{
     width: 74px;
-   margin-top: 12px;
 }
 .topnav {
     position: fixed;
@@ -372,13 +344,14 @@ nav.show .icon-close {
 }
 .topnav .icon {
     display: none;
+    align-items: center;
 }
 
 .topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
-    text-align: center;
+    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -440,11 +413,6 @@ nav.show .icon-close {
     flex: 1 0 0;
     align-self: stretch;
 }
-
-/*#direita{
-   text-align: right;
-   float: right;
-} */
 
 .benefits h2{
     font-family: Fredoka;
@@ -675,19 +643,6 @@ swiper-slide img {
     color: #32394cc3;
 }
 
-/*.social{
-    display: flex;
-    padding: 8px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    align-self: stretch; 
-}
-.social img{
-    width: 24px;
-    height: 24px;
-}*/
-
 
 /* Contact */
 #contact .grid {
@@ -713,9 +668,13 @@ swiper-slide img {
 .button-airplane{
     padding: 14px;
     background-color: #32394C;
-    color: #fff;
+    color: whitesmoke;
     font-family: Fredoka;
     border-radius: 8px;
+}
+
+.button-airplane:hover{
+    background-color: var(--base-color);
 }
 
 #contact .text p {
@@ -795,12 +754,14 @@ swiper-slide img {
 
 .accordion-title h3{
     font-family: Fredoka;
+    text-align: left;
 }
 
 .section-section1 p{
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    text-align: left;
 }
 
 .show{
@@ -928,6 +889,7 @@ footer {
     border-bottom: 1px solid #fff;
     outline: none;
     color: #fff;
+    text-align: left;
   }
 
   .newsletter-input::placeholder{
@@ -936,8 +898,8 @@ footer {
   }
 
   .newsletter-button {
-    background-color: #fff;
-    color: #545454;
+    background-color: whitesmoke;
+    color: var(--base-color);
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -945,6 +907,11 @@ footer {
     cursor: pointer;
     margin-left: 27px;
   }
+
+  .newsletter-button:hover {
+    background-color: var(--base-color-second);
+    color: whitesmoke;
+}
 
 footer.section {
     padding: 6.4rem 0;
@@ -1241,6 +1208,7 @@ footer.section {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 2em;
     }
 
     footer{
@@ -1569,33 +1537,52 @@ footer.section {
 
 @media screen and (max-width: 320px) {
     .section {
-      width: 84%;
-      margin: 0 auto;
-      text-align: center;
+        width: 84%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .button{
+        padding: 8px 48px;
+        background-color: var(--base-color);
+        color: var(--color-white);
     }
 
     .cards1{
         flex-direction: column;
         align-items: center;
     }
-
     .banner{
         display: none;
     }
 
     .banner-mobile{
         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mySwiper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #home .text{
-        padding-top: 80px;
         align-items: center;
         justify-content: center;
     }
 
-    .img-descontos{
-        width: 90%;
-        padding-top: 30px;
+    #title-home{
+        font-size: 1.3em;
+    }
+
+    #title-p{
+        font-size: 0.4em;
     }
 
     .order-img{
@@ -1630,9 +1617,13 @@ footer.section {
 
     .text-airplane{
         flex-direction: row;
-        width: 100%;
+        width: 99%;
         align-items: center;
         z-index: 998;
+    }
+
+    .text-airplane h2{
+        font-size: 1em;
     }
 
     .accordion-title h3{
@@ -1640,7 +1631,7 @@ footer.section {
     }
 
     .down-ico{
-        width: 12px;
+        display: none;
     }
 
     .size-title {
@@ -1651,6 +1642,7 @@ footer.section {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 2em;
     }
 
     footer{
@@ -1658,7 +1650,11 @@ footer.section {
     }
 
     .benefits h2 {
-        font-size: 2em;
+        font-size: 1.8em;
+    }
+
+    .benefits p {
+        font-size: 1.2em;
     }
 
     .benefits-credito{
@@ -1679,7 +1675,7 @@ footer.section {
 
     .img-banner-mobile{
         display: flex;
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -1697,6 +1693,11 @@ footer.section {
 
     .benefits-credito h2{
         font-size: 2em;
+        text-align: left;
+    }
+
+    .benefits-credito p{
+        text-align: left;
     }
     body{
         overflow-x: none;
@@ -1704,8 +1705,8 @@ footer.section {
     }
 
     #services .card1{
-        width: 210px;
-        height: 210px;
+        width: 180px;
+        height: 180px;
     }
 
     .img-card-services{
@@ -1728,8 +1729,7 @@ footer.section {
     .newsletter{
         width: 100%;
     }
-
-
+    
     .nav-footer{
         display: none;
     }
@@ -1754,6 +1754,10 @@ footer.section {
 
     #header{
         display: none;
+    }
+    .iconeBega{
+        display: flex;
+        font-size: 24px;
     }
   }
   
