@@ -69,6 +69,7 @@ body {
     width: 84%;
     text-align: center;
     margin: 0 auto;
+    background-color: red;
 }
 
 .title {
@@ -148,23 +149,30 @@ body {
     z-index: 100;
     padding-top: 40px;
     justify-content: space-between;
+    width: 100%;
 }
 
 #header.scroll{
     box-shadow: .2rem .2rem 2rem rgba(0, 0, 0, 0.15);
 }
 
+#nav-menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav { 
+    width: 84%;
     height:  var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 84%;
 }
 
 nav .container{
     display: flex;
-    width: 1440px;
     padding: 40px 0px;
     justify-content: space-between;
     align-items:center;
@@ -290,6 +298,8 @@ nav.show .icon-close {
 }
 
 #home .text {
+    text-align: left;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -320,6 +330,11 @@ nav.show .icon-close {
 
 .banner{
     width: 50%;
+    direction: rtl;
+}
+
+.banner-mobile{
+    display: none;
 }
 
 /*MENU Hamburguer*/
@@ -341,6 +356,7 @@ nav.show .icon-close {
     overflow: hidden;
     background: var(--gradient-secondary, linear-gradient(180deg, #0092DC 0%, #D7F5FF 100%));
     width: 100%;
+    display: none;
 }
 .topnav .icon {
     display: none;
@@ -510,6 +526,15 @@ swiper-slide {
 swiper-slide img {
     display: block;
     width: 70%;
+}
+
+.swiper{
+    display: none;
+    touch-action: pan-y;
+}
+
+#partners{
+    width: 100%;
 }
 
 .img-novidades{
@@ -956,7 +981,16 @@ footer.section {
 
 /*SCREENS LAPTOPS*/
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
+    .section {
+        width: 84% !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+    }
+
     #header{
         display: flex;
         justify-content: center;
@@ -1004,18 +1038,44 @@ footer.section {
         font-size: 2em;
     }
 
+    #myTopnav{
+        display: none !important;
+    }
+
     .topnav{
-        display: none;
+        display: none !important;
       }
     
       
     .banner-mobile{
-        display: none;
+        display: none !important;
     }
 
 }
 
-@media screen and (min-width: 960px) {
+@media (max-width: 1040px){
+    .section {
+        width: 84% !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+    }
+
+    .banner-mobile{
+        display: none;
+    }
+
+    .section {
+        width: 84% !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+    }
+
     #header{
         display: flex;
         justify-content: center;
@@ -1064,21 +1124,87 @@ footer.section {
     }
 
     .topnav{
-        display: none;
+        display: none !important;
     }
     
     .banner-mobile{
-        display: none;
+        display: none !important;
     }
 }
-@media screen and (min-width: 769px){
+
+@media screen and (max-width: 960px) {
     .section {
-        width: 84%;
-        box-sizing: border-box;
+        width: 84% !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+    }
+
+    #header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-menu{
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto;
+    }
+
+    .img-banner{
+        width: 70%;
+    }
+
+    /*FOOTER*/
+    .newsletter-button{
+        width: 161px;
+    
+    }
+
+    footer{
+        height: 300px;
+    }
+
+    #icone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-menu{
+        padding-top: 10px;
+    }
+
+    .credits{
+       text-align: center;
+       width: 90%;
+    }
+
+    .size-title{
+        font-size: 2em;
+    }
+
+    .topnav{
+        display: none !important;
+    }
+    
+    .banner-mobile{
+        display: none !important;
+    }
+}
+@media(max-width: 769px){
+    .section {
+        width: 84% !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
     }
 
     #header{
@@ -1107,7 +1233,7 @@ footer.section {
 
 
     .button-header{
-       display: none;
+       display: none !important;
     }
 
     .banner-home{
@@ -1123,7 +1249,7 @@ footer.section {
     }
 
     .banner-mobile{
-        display: none;
+        display: none !important;
     }
 
     #home .text{
@@ -1136,7 +1262,7 @@ footer.section {
     }
 
     .topnav{
-        display: none;
+        display: none !important;
     }
 
     .logo-mobile{
@@ -1153,7 +1279,7 @@ footer.section {
     }
 
     #home-image{
-        display: none;
+        display: none !important;
     }
 
     #benefits{
@@ -1167,7 +1293,7 @@ footer.section {
     }
 
     .airplace{
-        display: none;
+        display: none !important;
     }
 
     .text-airplane{
@@ -1205,7 +1331,8 @@ footer.section {
     }
 
     .texto-novidades p{
-        font-size: 0.9em;
+        width: 100%;
+        font-size: 0.7em;
     }
 
     .newsletter{
@@ -1213,7 +1340,7 @@ footer.section {
     }
 
     .nav-footer{
-        display: none;
+        display: none !important;
     }
 
     .img-novidades{
@@ -1228,7 +1355,7 @@ footer.section {
     }
 
     .img-banner-mobile{
-        display: none;
+        display: none !important;
     }
 
     .img-video{
@@ -1247,7 +1374,7 @@ footer.section {
         font-size: 2em;
     }
     body{
-        overflow-x: none;
+        overflow-x: none !important;
     }
 
     #services .card1{
@@ -1289,14 +1416,14 @@ footer.section {
 
 
 /*SCREENS TABLET*/
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
     .section {
-        width: 84%;
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
+        width: 84% !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
     }
 
     #header{
@@ -1325,7 +1452,7 @@ footer.section {
 
 
     .button-header{
-       display: none;
+       display: none !important;
     }
 
     .banner-home{
@@ -1341,7 +1468,7 @@ footer.section {
     }
 
     .banner-mobile{
-        display: none;
+        display: none !important;
     }
 
     #home .text{
@@ -1354,7 +1481,7 @@ footer.section {
     }
 
     .topnav{
-        display: none;
+        display: none !important;
     }
 
     .logo-mobile{
@@ -1371,7 +1498,7 @@ footer.section {
     }
 
     #home-image{
-        display: none;
+        display: none !important;
     }
 
     #benefits{
@@ -1385,7 +1512,7 @@ footer.section {
     }
 
     .airplace{
-        display: none;
+        display: none !important;
     }
 
     .text-airplane{
@@ -1423,7 +1550,8 @@ footer.section {
     }
 
     .texto-novidades p{
-        font-size: 0.9em;
+        width: 100%;
+        font-size: 0.7em;
     }
 
     .newsletter{
@@ -1431,7 +1559,7 @@ footer.section {
     }
 
     .nav-footer{
-        display: none;
+        display: none !important;
     }
 
     .img-novidades{
@@ -1446,7 +1574,7 @@ footer.section {
     }
 
     .img-banner-mobile{
-        display: none;
+        display: none !important;
     }
 
     .img-video{
@@ -1465,7 +1593,7 @@ footer.section {
         font-size: 2em;
     }
     body{
-        overflow-x: none;
+        overflow-x: none !important;
     }
 
     #services .card1{
@@ -1507,11 +1635,11 @@ footer.section {
   
 
 /*SCREENS MOBILE*/
-@media screen and (max-width: 480px) {
+@media(max-width: 480px) {
     .section {
-      width: 84%;
-      margin: 0 auto;
-      text-align: center;
+      width: 84% !important;
+      margin: 0 auto !important;
+      text-align: center !important;
     }
 
     .cards1{
@@ -1526,10 +1654,10 @@ footer.section {
     }
 
     .banner{
-        display: none;
+        display: none !important;
     }
-    .banner-mobile{
-        display: flex;
+    .banner-mobile{ 
+        display: flex !important;
     }
 
     .iconeBega{
@@ -1557,7 +1685,7 @@ footer.section {
     }
 
     #home-image{
-        display: none;
+        display: none !important;
     }
 
     #benefits{
@@ -1575,7 +1703,7 @@ footer.section {
     }
 
     .airplace{
-        display: none;
+        display: none !important;
     }
 
     .text-airplane{
@@ -1616,7 +1744,8 @@ footer.section {
     }
 
     .texto-novidades p{
-        font-size: 0.9em;
+        width: 100%;
+        font-size: 0.7em;
     }
 
     .img-novidades{
@@ -1624,7 +1753,7 @@ footer.section {
     }
 
     .img-banner{
-        display: none;
+        display: none !important;
     }
 
     .img-banner-mobile{
@@ -1649,8 +1778,8 @@ footer.section {
         font-size: 2em;
     }
     body{
-        overflow-x: none;
-        background: none;
+        overflow-x: none !important;
+        background: none !important;
     }
 
     #services .card1{
@@ -1681,7 +1810,7 @@ footer.section {
 
 
     .nav-footer{
-        display: none;
+        display: none !important;
     }
 
     .barra-footer{
@@ -1703,15 +1832,20 @@ footer.section {
     }
 
     #header{
-        display: none;
+        display: none !important;
     }
-  }
+
+    .topnav{
+        display: flex !important;
+        background-color: green;
+    }
+}
   
 
 /*Menu Hamburguer*/
   @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon img.logo-mobile{
+    .topnav a.icon{
       float: right;
       display: block;
     }
@@ -1731,14 +1865,14 @@ footer.section {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media(max-width: 320px) {
     .section {
-        width: 84%;
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
+        width: 84% !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
 
     }
 
@@ -1753,11 +1887,11 @@ footer.section {
         align-items: center;
     }
     .banner{
-        display: none;
+        display: none !important;
     }
 
     .banner-mobile{
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: center;
     }
@@ -1790,7 +1924,7 @@ footer.section {
     }
 
     #home-image{
-        display: none;
+        display: none !important;
     }
 
     #benefits{
@@ -1808,7 +1942,7 @@ footer.section {
     }
 
     .airplace{
-        display: none;
+        display: none !important;
     }
 
     .text-airplane{
@@ -1827,7 +1961,7 @@ footer.section {
     }
 
     .down-ico{
-        display: none;
+        display: none !important;
     }
 
     .size-title {
@@ -1858,15 +1992,15 @@ footer.section {
     }
 
     .texto-novidades p{
-        font-size: 0.9em;
+        width: 100%;
+        font-size: 0.7em;
     }
-
     .img-novidades{
         padding-top: 20px;
     }
 
     .img-banner{
-        display: none;
+        display: none !important;
     }
 
     .img-banner-mobile{
@@ -1896,8 +2030,8 @@ footer.section {
         text-align: left;
     }
     body{
-        overflow-x: none;
-        background: none;
+        overflow-x: none !important;
+        background: none !important;
     }
 
     #services .card1{
@@ -1927,7 +2061,7 @@ footer.section {
     }
     
     .nav-footer{
-        display: none;
+        display: none !important;
     }
 
     .barra-footer{
@@ -1949,11 +2083,18 @@ footer.section {
     }
 
     #header{
-        display: none;
+        display: none !important;
     }
     .iconeBega{
         display: flex;
         font-size: 24px;
+    }
+
+    .topnav{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
     }
   }
   
