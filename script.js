@@ -70,8 +70,7 @@ scrollReveal.reveal(`
     #home .text, #home .image,
     #services header, #services .card,
     #team header, #team .card,
-    #highlights .text, .gallery .image,
-    #testimonials header, #testimonials .testimonials,
+    #highlights .text, .image,
     #contact .text, #contact .links,
     footer .brand, footer .social
     `,

@@ -276,7 +276,7 @@ nav.show .icon-close {
 #home {
     /*overflow: hidden;*/
     display: flex;
-   padding: 0 0px 80px 0px;
+    padding: 0 0px 80px 0px;
     align-items: center;
     justify-content: center;
 }
@@ -339,6 +339,16 @@ nav.show .icon-close {
 #home .text p {
     max-width: 100%;
     font-size: 20px;
+}
+
+.banner-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    width: 50%;
 }
 
 /*MENU Hamburguer*/
@@ -520,7 +530,6 @@ swiper-container {
 }
 
 swiper-slide {
-    background-color: #fff;
     background-position: center;
     background-size: cover;
     width: 300px;
@@ -1036,6 +1045,7 @@ footer.section {
     .banner-mobile{
         display: none;
     }
+
 }
 
 @media screen and (min-width: 960px) {
@@ -1161,6 +1171,10 @@ footer.section {
     .cards1{
         flex-direction: column;
         align-items: center;
+    }
+
+    .banner-mobile{
+        display: none;
     }
 
     #home .text{
@@ -1351,6 +1365,13 @@ footer.section {
         padding-top: 80px;
         align-items: center;
         justify-content: center;
+    }
+
+    .banner{
+        display: none;
+    }
+    .banner-mobile{
+        display: flex;
     }
 
     .iconeBega{
@@ -1546,7 +1567,7 @@ footer.section {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
     .section {
       width: 84%;
       margin: 0 auto;
@@ -1556,6 +1577,14 @@ footer.section {
     .cards1{
         flex-direction: column;
         align-items: center;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .banner-mobile{
+        display: flex;
     }
 
     #home .text{
