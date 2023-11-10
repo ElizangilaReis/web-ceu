@@ -1058,11 +1058,120 @@ footer.section {
 }
 
 @media (min-width: 992px) {
-    html{
-        --title-font-size: 3.6rem;
-        --subtitle-font-size: 1.8rem;
+    .container {
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    .section {
+        padding-bottom: 20px;
+    }
+    
+    .section header {
+        max-width: 52.3rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        height: 5rem;
+    }
+
+    nav .menu {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+
+    }
+
+    nav .menu ul {
+        display: flex;
+        gap: 3.2rem;
+    }
+
+    nav .menu ul li a.title {
+        font: 400 1.6rem var(--body-font);
+        -webkit-font-smoothing: antialiased;
+
+    }
+
+    nav .menu ul li a.title.active {
+        font-weight: bold;
+        -webkit-font-smoothing: auto;
+    }
+
+    nav .icon-menu {
+        display: none;
+    }
+    
+    main {
+        margin-top: var(--header-height);
+    }
+
+    #home .container {
+        grid-auto-flow: column;
+        margin: 0 auto; 
+    }
+
+    .banner-home{
+        width: 80%;
+        display: flex;
+        
+        justify-content: space-between;
+    }
+
+    
+    #home .text {
+        order: 0;
+        max-width: 43rem;
+        text-align: left;
+    }
+    
+    #highlights .container {
+        grid-auto-flow: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #highlights .image::before {
+        left: -10%;
+    }
+    
+    #contact .container {
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #contact .text {
+        max-width: 32rem;
+    }
+
+    footer .container {
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer.section {
+        padding: 6rem 0;
+    }
+
+    footer .logo {
+        font-size: 3rem;
+    }
+
+    /* Team */
+
+    #team .cards.grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+   
 }
 
 
@@ -1119,6 +1228,194 @@ footer.section {
         display: none;
       }
 }
+
+/*SCREENS TABLET*/
+@media screen and (max-width: 768px) {
+    .section {
+      width: 84%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .cards1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home .text{
+        padding-top: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-descontos{
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    .order-img{
+        order: 1;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    #home-image{
+        display: none;
+    }
+
+    #benefits{
+        flex-direction: column;
+    }
+
+    .cards{
+       flex-direction: column;
+    }
+
+    #contact .grid{
+        height: 400px;
+        background-size: 100%;
+        background-size: cover;
+    }
+
+    .airplace{
+        display: none;
+    }
+
+    .text-airplane{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        z-index: 998;
+    }
+
+    .accordion-title h3{
+        font-size: 1em;
+    }
+
+    .down-ico{
+        width: 12px;
+    }
+
+    .size-title {
+        font-size: 2em;
+    }
+
+    .geral h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .benefits h2 {
+        font-size: 2em;
+    }
+
+    .benefits-credito{
+        align-items: flex-start;
+    }
+
+    .texto-novidades p{
+        font-size: 0.9em;
+    }
+
+    .img-novidades{
+        padding-top: 20px;
+    }
+
+    .img-banner{
+        display: none;
+    }
+
+    .img-banner-mobile{
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .img-video{
+        height: 280px;
+    }
+
+    .img-banner2{
+        width: 70%;
+    }
+
+    #direita{
+        text-align: left;
+    }
+
+    .benefits-credito h2{
+        font-size: 2em;
+    }
+    body{
+        overflow-x: none;
+        background: none;
+    }
+
+    #services .card1{
+        width: 210px;
+        height: 210px;
+    }
+
+    .img-card-services{
+        width: 30px;
+    }
+
+    #services .card1 .title {
+        font-size: 0.7em;
+    }
+
+    #services .card1 p{
+        font-size: 0.5em;
+        line-height: 15px;
+    }
+
+    .footer-elements{
+        flex-direction: column;
+    }
+
+    .newsletter{
+        width: 100%;
+    }
+
+
+    .nav-footer{
+        display: none;
+    }
+
+    .barra-footer{
+        width: 100%;
+    }
+
+    .divider-2{
+        width: 84%;
+    }
+
+    .credits {
+        width:100%;
+        flex-direction: column;
+    }
+
+    .copyright{
+        order: 1;
+        padding-top: 8px;
+    }
+
+    #header{
+        display: none;
+    }
+  }
+  
+  
+  .iconeBega{
+    font-size: 50px;
+  }
 
 /*SCREENS MOBILE*/
 @media screen and (max-width: 480px) {
