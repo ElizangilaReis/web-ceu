@@ -1072,63 +1072,6 @@ footer.section {
     }
 }
 @media screen and (min-width: 769px){
-    #header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #nav-menu{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .img-banner{
-        width: 70%;
-    }
-
-    /*FOOTER*/
-    .newsletter-button{
-        width: 161px;
-    
-    }
-
-    footer{
-        height: 300px;
-    }
-
-    #icone{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .footer-menu{
-        padding-top: 10px;
-    }
-
-    .credits{
-       text-align: center;
-       width: 90%;
-    }
-
-    .size-title{
-        font-size: 2em;
-    }
-    .topnav{
-        display: none;
-    }
-
-    .banner-mobile{
-        display: none;
-    }
-}
-
-/*SCREENS TABLET*/
-@media screen and (min-width: 768px) {
     .section {
         width: 84%;
         box-sizing: border-box;
@@ -1136,8 +1079,6 @@ footer.section {
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        background-color: red;
-
     }
 
     #header{
@@ -1151,7 +1092,6 @@ footer.section {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: purple;
     }
 
     .menu{
@@ -1163,7 +1103,6 @@ footer.section {
 
     .logo{
         width: 10%;
-        background-color: red;
     }
 
 
@@ -1176,19 +1115,11 @@ footer.section {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #000000;
     }
     
     .banner{
         width: 50%;
-        background-color: purple;
-        margin-top: 60px;
-    }
-
-
-    .cards1{
-        flex-direction: column;
-        align-items: center;
+        margin-top: 30px;
     }
 
     .banner-mobile{
@@ -1196,7 +1127,6 @@ footer.section {
     }
 
     #home .text{
-        background-color: green;
         width: 50%;
         padding-top: 80px;
         align-items: left;
@@ -1222,20 +1152,12 @@ footer.section {
         order: 1;
     }
 
-    footer{
-        width: 100%;
-    }
-
     #home-image{
         display: none;
     }
 
     #benefits{
         flex-direction: column;
-    }
-
-    .cards{
-       flex-direction: column;
     }
 
     #contact .grid{
@@ -1257,10 +1179,6 @@ footer.section {
 
     .accordion-title h3{
         font-size: 1em;
-    }
-
-    .down-ico{
-        width: 12px;
     }
 
     .size-title {
@@ -1290,18 +1208,27 @@ footer.section {
         font-size: 0.9em;
     }
 
+    .newsletter{
+        width: 100%;
+    }
+
+    .nav-footer{
+        display: none;
+    }
+
     .img-novidades{
+        width: 100%;
         padding-top: 20px;
     }
 
     .img-banner{
-        display: none;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .img-banner-mobile{
-        display: flex;
-        width: 70%;
-        margin: 0 auto;
+        display: none;
     }
 
     .img-video{
@@ -1324,8 +1251,8 @@ footer.section {
     }
 
     #services .card1{
-        width: 210px;
-        height: 210px;
+        width: 190px;
+        height: 190px;
     }
 
     .img-card-services{
@@ -1341,17 +1268,222 @@ footer.section {
         line-height: 15px;
     }
 
-    .footer-elements{
+    .barra-footer{
+        width: 100%;
+    }
+
+    .divider-2{
+        width: 84%;
+    }
+
+    .credits {
+        width:100%;
         flex-direction: column;
+    }
+
+    .copyright{
+        order: 1;
+        padding-top: 8px;
+    }
+}
+
+
+/*SCREENS TABLET*/
+@media screen and (max-width: 768px) {
+    .section {
+        width: 84%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #header{
+        display: flex;
+    }
+
+    
+    #nav-menu{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu{
+        background-color: var(--color-white);
+        padding: 10px;
+        border-radius: 8px 0 0 8px;
+        width: 86%;
+    }
+
+    .logo{
+        width: 10%;
+    }
+
+
+    .button-header{
+       display: none;
+    }
+
+    .banner-home{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .banner-mobile{
+        display: none;
+    }
+
+    #home .text{
+        width: 50%;
+        padding-top: 80px;
+        align-items: left;
+        text-align: left;
+        justify-content: left;
+        z-index: 990;
+    }
+
+    .topnav{
+        display: none;
+    }
+
+    .logo-mobile{
+        order: 1;
+        align-items: end;
+    }
+    .img-descontos{
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    .order-img{
+        order: 1;
+    }
+
+    #home-image{
+        display: none;
+    }
+
+    #benefits{
+        flex-direction: column;
+    }
+
+    #contact .grid{
+        height: 400px;
+        background-size: 100%;
+        background-size: cover;
+    }
+
+    .airplace{
+        display: none;
+    }
+
+    .text-airplane{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        z-index: 998;
+    }
+
+    .accordion-title h3{
+        font-size: 1em;
+    }
+
+    .size-title {
+        font-size: 2em;
+    }
+
+    .geral h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .benefits h2 {
+        font-size: 2em;
+    }
+
+    .benefits-credito{
+        align-items: flex-start;
+    }
+
+    .texto-novidades p{
+        font-size: 0.9em;
     }
 
     .newsletter{
         width: 100%;
     }
 
-
     .nav-footer{
         display: none;
+    }
+
+    .img-novidades{
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .img-banner{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .img-banner-mobile{
+        display: none;
+    }
+
+    .img-video{
+        height: 280px;
+    }
+
+    .img-banner2{
+        width: 70%;
+    }
+
+    #direita{
+        text-align: left;
+    }
+
+    .benefits-credito h2{
+        font-size: 2em;
+    }
+    body{
+        overflow-x: none;
+    }
+
+    #services .card1{
+        width: 190px;
+        height: 190px;
+    }
+
+    .img-card-services{
+        width: 30px;
+    }
+
+    #services .card1 .title {
+        font-size: 0.7em;
+    }
+
+    #services .card1 p{
+        font-size: 0.5em;
+        line-height: 15px;
     }
 
     .barra-footer{
