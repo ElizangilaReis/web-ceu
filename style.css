@@ -1038,10 +1038,6 @@ footer.section {
         font-size: 2em;
     }
 
-    #myTopnav{
-        display: none !important;
-    }
-
     .topnav{
         display: none !important;
       }
