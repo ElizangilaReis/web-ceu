@@ -461,10 +461,10 @@ nav.show .icon-close {
 }
 
 .img-banner{
-    width: 1070px;
+    width: 100%;
 }
 .img-banner2{
-    width: 1070px;
+    width: 100%;
 }
 
 .img-banner-mobile{
@@ -472,7 +472,7 @@ nav.show .icon-close {
 }
 
 .img-descontos{
-    width: 584px;
+    width: 100%;
 }
 
 #section-video h2{
