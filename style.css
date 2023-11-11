@@ -371,6 +371,22 @@ nav.show .icon-close {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    flex-direction: column;
+}
+
+.linkMenu {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    backdrop-filter: blur(10px);
+    top: 9%;
+    height: 100vh;
+    animation: appearField 1s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.5rem;
+    align-items: center;
+    animation: fade 1s
 }
 
 .iconeBega{
@@ -1037,19 +1053,6 @@ footer.section {
     .size-title{
         font-size: 2em;
     }
-
-<<<<<<< Updated upstream
-    .topnav{
-        display: none !important;
-      }
-    
-      
-=======
->>>>>>> Stashed changes
-    .banner-mobile{
-        display: none !important;
-    }
-
 }
 
 @media (max-width: 1040px){
