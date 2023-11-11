@@ -1251,11 +1251,6 @@ footer.section {
         justify-content: left;
         z-index: 990;
     }
-
-    .logo-mobile{
-        order: 1;
-        align-items: end;
-    }
     .img-descontos{
         width: 90%;
         padding-top: 30px;
@@ -1271,6 +1266,7 @@ footer.section {
 
     #benefits{
         flex-direction: column;
+        width: 100%;
     }
 
     #contact .grid{
@@ -1470,11 +1466,11 @@ footer.section {
     .topnav{
         display: none !important;
     }
-
+    
     .logo-mobile{
-        order: 1;
-        align-items: end;
+        width: 30%;
     }
+
     .img-descontos{
         width: 90%;
         padding-top: 30px;
@@ -1648,7 +1644,6 @@ footer.section {
     }
 
     .iconeBega{
-        display: flex;
         font-size: 30px;
     }
 
@@ -1665,10 +1660,6 @@ footer.section {
 
     .order-img{
         order: 1;
-    }
-
-    footer{
-        width: 100%;
     }
 
     #home-image{
@@ -1724,10 +1715,6 @@ footer.section {
 
     .benefits h2 {
         font-size: 2em;
-    }
-
-    .benefits-credito{
-        align-items: flex-start;
     }
 
     .texto-novidades p{
@@ -1805,7 +1792,7 @@ footer.section {
     }
 
     .divider-2{
-        width: 84%;
+        width: 100%;
     }
 
     .credits {
@@ -1822,9 +1809,14 @@ footer.section {
         display: none !important;
     }
 
+    .linkMenu{
+        display: grid;
+    }
+
     .topnav{
         display: flex !important;
-        background-color: green;
+        justify-content: space-between;
+        align-items: center;
     }
 }
   
@@ -1913,16 +1905,13 @@ footer.section {
         order: 1;
     }
 
-    footer{
-        width: 100%;
-    }
-
     #home-image{
         display: none !important;
     }
 
     #benefits{
         flex-direction: column;
+        width: 100%;
     }
 
     .cards{
@@ -1973,24 +1962,17 @@ footer.section {
         width: 100%;
     }
 
-    .benefits h2 {
-        font-size: 1.8em;
-    }
-
-    .benefits p {
-        font-size: 1.2em;
-    }
-
-    .benefits-credito{
-        align-items: flex-start;
+    .texto-novidades h2{
+        width: 100%;
+        font-size: 1em;
     }
 
     .texto-novidades p{
         width: 100%;
-        font-size: 0.7em;
     }
     .img-novidades{
         padding-top: 20px;
+        width: 80%;
     }
 
     .img-banner{
@@ -2017,7 +1999,6 @@ footer.section {
 
     .benefits-credito h2{
         font-size: 2em;
-        text-align: left;
     }
 
     .benefits-credito p{
@@ -2046,13 +2027,29 @@ footer.section {
         line-height: 15px;
     }
 
+    .footer{
+        width: 100%;
+    }
 
     .footer-elements{
         flex-direction: column;
     }
 
     .newsletter{
-        width: 100%;
+        width: 80%;
+    }
+
+    .box-form{
+        flex-direction: column;
+    }
+    
+    .newsletter-button {
+       margin: 0 auto;
+       width: 100%;
+    }
+
+    .newsletter-input{
+        margin-bottom: 10px;
     }
     
     .nav-footer{
@@ -2065,6 +2062,11 @@ footer.section {
 
     .divider-2{
         width: 84%;
+        background-color: green;
+    }
+
+    #contactos{
+        width: 100%;
     }
 
     .credits {
@@ -2081,15 +2083,13 @@ footer.section {
         display: none !important;
     }
     .iconeBega{
-        display: flex;
         font-size: 24px;
     }
 
     .topnav{
         display: flex !important;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        background-color: green;
     }
   }
   
