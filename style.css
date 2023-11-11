@@ -568,7 +568,7 @@ swiper-slide img {
     width: 300px;
     height: 300px;
     display: flex;
-    padding: 0 14px 0 14px;
+    padding: 0 12px 0 12px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -1602,6 +1602,7 @@ footer.section {
         height: 271px;
     }
 
+
     .img-card-services{
         width: 60px;
     }
@@ -1790,8 +1791,8 @@ footer.section {
     }
 
     #services .card1{
-        width: 308px;
-        height: 271px;
+        width: 240px;
+        height: 240px;
     }
 
     .img-card-services{
@@ -1799,11 +1800,11 @@ footer.section {
     }
 
     #services .card1 .title {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
 
     #services .card1 p{
-        font-size: 0.9em;
+        font-size: 0.7em;
         line-height: 15px;
         text-align: justify;
     }
@@ -2051,8 +2052,8 @@ footer.section {
     }
 
     #services .card1{
-        width: 308px;
-        height: 271px;
+        width: 240px;
+        height: 240px;
     }
 
     .img-card-services{
@@ -2060,11 +2061,11 @@ footer.section {
     }
 
     #services .card1 .title {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
 
     #services .card1 p{
-        font-size: 0.9em;
+        font-size: 0.7em;
         line-height: 15px;
         text-align: justify;
     }
