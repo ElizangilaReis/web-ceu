@@ -324,8 +324,6 @@ nav.show .menu ul{
 }
 
 /*MENU Hamburguer*/
-
-/* Style the navigation menu */
 .topnav {
     position: fixed;
     z-index: 999;
@@ -338,12 +336,10 @@ nav.show .menu ul{
     margin: 0 auto;
   }
   
-  /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
   }
   
-  /* Style navigation menu links */
   .topnav a {
     color: white;
     margin: 0 auto;
@@ -357,7 +353,6 @@ nav.show .menu ul{
     text-align: center;
   }
   
-  /* Style the hamburger menu */
   .topnav a.icon {
     display: block;
     position: absolute;
@@ -367,7 +362,6 @@ nav.show .menu ul{
     padding-right: 18px;
   }
   
-  /* Style the active link (or home/logo) */
   .active {
     color: white;
   }
