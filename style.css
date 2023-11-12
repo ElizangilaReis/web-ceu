@@ -566,13 +566,13 @@ swiper-slide img {
 }
 
 .img-card-services{
-    width: 50px;
+    width: 40px;
 }
 
 
 
 #services .card1 .title {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 1.2rem;
 }
 
@@ -589,7 +589,7 @@ swiper-slide img {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
 }
 
 
