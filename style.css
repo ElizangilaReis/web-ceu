@@ -680,11 +680,12 @@ swiper-slide img {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .icone-social{
     font-size: 1.7em;
-    padding: 12px 14px 0 0;
+    padding: 5px;
     color: #32394C;
 }
 
@@ -1432,6 +1433,7 @@ footer.section {
         align-items: center !important;
         justify-content: center !important;
         margin: 0 auto !important;
+        background-color: red;
     }
 
     #header{
@@ -1483,11 +1485,13 @@ footer.section {
     .banner-home{
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        background-color: #00217E;
     }
     
     .banner{
+        background-color: green;
         width: 50%;
         margin-top: 30px;
     }
@@ -1528,6 +1532,10 @@ footer.section {
 
     #benefits{
         flex-direction: column;
+    }
+
+    #team{
+        background-color: green;
     }
 
     #contact .grid{
@@ -1593,10 +1601,14 @@ footer.section {
     }
 
     .img-banner{
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
+        width: 80%;
     }
+
+    #illustration{
+        width: 100%;
+        text-align: center;
+    }
+    
 
     .img-banner-mobile{
         display: none !important;
@@ -1662,6 +1674,11 @@ footer.section {
     .newsletter-box{
         width: 500px;
       }
+
+    .card{
+        width: 100%;
+        background-color: #00217E;
+    }
 
   }
 
