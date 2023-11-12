@@ -266,21 +266,6 @@ nav.show .menu ul{
     cursor: pointer;
 }
 
-nav .icon-close {
-    visibility: hidden;
-    opacity: 0;
-    top: -2.4rem;
-    position: absolute;
-    right: 1.4rem;
-    transition: .2s;
-}
-
-nav.show .icon-close {
-    visibility: visible;
-    opacity: 1;
-    top: 2.4rem;
-}
-
 #home {
     /*overflow: hidden;*/
     display: flex;
@@ -382,22 +367,13 @@ nav.show .icon-close {
     padding-right: 18px;
   }
   
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    color: black;
-  }
-  
   /* Style the active link (or home/logo) */
   .active {
     color: white;
   }
 
 .logo-mobile{
-    width: 74px;
-}
-
-.iconeBega{
-    font-size: 50px;
+    width: 100%;
 }
 
 
@@ -613,7 +589,7 @@ swiper-slide img {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -1244,11 +1220,6 @@ footer.section {
         width: 86%;
     }
 
-    .logo{
-        width: 10%;
-    }
-
-
     .button-header{
        display: none !important;
     }
@@ -1436,15 +1407,6 @@ footer.section {
         display: none !important;
     }
 
-    .topnav a.icon {
-        font-size: 40px;
-        padding-right: 60px;
-    }
-
-    .logo-mobile{
-        width: 10%;
-    }
-
     .topnav img{
         width: 18%;
         padding-left: 22px;
@@ -1456,7 +1418,6 @@ footer.section {
 
     .cards1{
         width: 70%;
-        background-color: green;
     }
     
     #nav-menu{
@@ -1474,21 +1435,14 @@ footer.section {
         width: 86%;
     }
 
-    .logo{
-        width: 10%;
-    }
-
-
     .banner-home{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #00217E;
     }
     
     .banner{
-        background-color: green;
         width: 50%;
         margin-top: 30px;
     }
@@ -1510,10 +1464,6 @@ footer.section {
         display: flex !important;
     }
     
-    .logo-mobile{
-        width: 30%;
-    }
-
     .img-descontos{
         width: 90%;
         padding-top: 30px;
@@ -1529,10 +1479,6 @@ footer.section {
 
     #benefits{
         flex-direction: column;
-    }
-
-    #team{
-        background-color: green;
     }
 
     #contact .grid{
@@ -1889,14 +1835,8 @@ footer.section {
         display: none !important;
     }
 
-    .linkMenu{
-        display: grid;
-    }
-
     .topnav{
         display: flex !important;
-        justify-content: space-between;
-        align-items: center;
     }
 }
   
@@ -2148,26 +2088,10 @@ footer.section {
     #header{
         display: none !important;
     }
-    .iconeBega{
-        font-size: 24px;
-    }
 
     .topnav{
         display: flex !important;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
     }
-
-    .topnav a.icon {
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin: 0 auto;
-      }
   }
 
   /*Menu Hamburguer*/
