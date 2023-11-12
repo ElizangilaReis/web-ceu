@@ -1435,9 +1435,30 @@ footer.section {
     }
 
     #header{
-        display: flex;
+        display: none !important;
     }
 
+    .topnav a.icon {
+        font-size: 40px;
+        padding-right: 60px;
+    }
+
+    .logo-mobile{
+        width: 10%;
+    }
+
+    .topnav img{
+        width: 18%;
+        padding-left: 22px;
+    }
+
+    #title-home{
+        font-size: 32px;
+    }
+
+    .cards1{
+        width: 80%;
+    }
     
     #nav-menu{
         width: 100%;
@@ -1458,10 +1479,6 @@ footer.section {
         width: 10%;
     }
 
-
-    .button-header{
-       display: none !important;
-    }
 
     .banner-home{
         width: 100%;
@@ -1489,7 +1506,7 @@ footer.section {
     }
 
     .topnav{
-        display: none !important;
+        display: flex !important;
     }
     
     .logo-mobile{
@@ -1594,24 +1611,24 @@ footer.section {
     }
 
     #direita{
-        text-align: left;
+        text-align: right;
     }
 
     .benefits-credito h2{
         font-size: 2em;
     }
     body{
+        background: none;
         overflow-x: none !important;
     }
 
     #services .card1{
-        width: 308px;
-        height: 271px;
+        width: 240px;
+        height: 240px;
     }
 
-
     .img-card-services{
-        width: 60px;
+        width: 40px;
     }
 
     #services .card1 .title {
@@ -1619,7 +1636,7 @@ footer.section {
     }
 
     #services .card1 p{
-        font-size: 0.9em;
+        font-size: 0.6em;
         line-height: 15px;
         text-align: justify;
     }
@@ -1641,7 +1658,13 @@ footer.section {
         order: 1;
         padding-top: 8px;
     }
+
+    .newsletter-box{
+        width: 500px;
+      }
+
   }
+
   
 
 /*SCREENS MOBILE*/
