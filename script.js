@@ -1,14 +1,3 @@
-// Abrir/Fechar menu ao clicar no ícone
-
-const nav = document.querySelector('#header nav')
-const toggle = document.querySelectorAll('nav .toggle')
-
-for (const element of toggle) {
-    element.addEventListener('click', function () {
-        nav.classList.toggle('show')
-    })
-}
-
 // Esconder o menu ao clicar em um link
 
 const links = document.querySelectorAll('nav ul li a')
@@ -77,7 +66,7 @@ scrollReveal.reveal(`
     { interval: 100}
 )
 
-/* Back to Top
+// Back to Top
 
 const backToTop = document.querySelector('a.back-to-top')
 const about = document.querySelector("#services")
@@ -91,7 +80,7 @@ function backToTheTop () {
         backToTop.classList.remove('show')
     }
 }
-*/
+
 
 // Menu ativo conforme ativo na página
 
@@ -144,3 +133,4 @@ window.addEventListener('scroll', function() {
     backToTheTop()
     activateMenuAtCurrentSection()
 })
+

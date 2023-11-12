@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="compress-img/logo-mobile.png" sizes="64x64" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 
     <!--CONFIG SLIDES CARROSEL-->
@@ -41,19 +43,23 @@
         </div>
     </header>
     
-
-    <div class="topnav" id="myTopnav">
+   <!-- Top Navigation Menu -->
+    <div class="topnav">
         <img class="logo-mobile logo" src="compress-img/PNG/CEU LOGO 2023-06.png" alt="">
-        <a class="linkMenu" href="#services" >Serviços</a>
-        <a class="linkMenu" href="#parceiros">Parceiros</a>
-        <a class="linkMenu" href="#novidades">Novidades</a>
-        <a class="linkMenu" href="#ceu">Sobre o CEU</a>
-        <a class="linkMenu" href="#contactos">Contactos</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a class="linkMenu" href="#services" >Serviços</a>
+            <a class="linkMenu" href="#parceiros">Parceiros</a>
+            <a class="linkMenu" href="#novidades">Novidades</a>
+            <a class="linkMenu" href="#ceu">Sobre o CEU</a>
+            <a class="linkMenu" href="#contactos">Contactos</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa iconeBega fa-bars"></i>
+            <i class="fa iconeBega fa-bars"></i>
         </a>
     </div>
-
+      
     <main>
 
         <section class="section banner-mobile">
@@ -159,7 +165,7 @@
             <div class="imagem order-img">
                 <img class="img-descontos" src="compress-img/credito-min.png" alt="">
             </div>
-            <div class="benefits-credito">
+            <div class="benefits">
                 <img src="compress-img/Rectangulo Vantagens-min.png" alt="">
                 <h2>Crédito Universitário</h2>
                 <p>Invista no seu futuro hoje mesmo com nosso Crédito Universitário, 
@@ -237,7 +243,7 @@
                     compartilhar a Solução CEU (Conexão, Experiência e Unidade), promovendo uma 
                     experiência enriquecedora para todos os presentes.
                 </p>
-                <a href="">
+                <a href="https://www.instagram.com/ceu.ao/" target="_blank">
                     Saber mais...
                 </a>
             </div>
@@ -256,7 +262,7 @@
                     Categoria de Tecnologia de Informação no ANGOLA 
                     STARTUP SUMMIT, maior Evento de Startups em Angola.
                 </p>
-                <a href="">
+                <a href="https://mep.gov.ao/noticia/204/conhecidos-os-grandes-vencedores-da-2a-edicao-do-angola-startup-summit-2023" target="_blank">
                     Saber mais...
                 </a>
             </div>
@@ -278,7 +284,7 @@
                     organizações, e é com grande orgulho que podemos afirmar que a sua 
                     empresa, CEU, foi segunda empresa mais visualizada durante esta edição.
                 </p>
-                <a href="">
+                <a href="https://www.youtube.com/watch?v=ef0u-L5fteM" target="_blank">
                     Saber mais...
                 </a>
             </div>
@@ -303,9 +309,9 @@
                             <p>COORD.<br>GERAL</p>
                         </div> 
                         <div id="rede-social-team">
-                            <a href="#"><i class="fa-brands icone-social fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands icone-social fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands icone-social fa-linkedin-in"></i></a>
+                            <a href="https://web.facebook.com/profile.php?id=100005578637186" target="_blank"><i class="fa-brands icone-social fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/niuka_casimiro__empreendedor/" target="_blank"><i class="fa-brands icone-social fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/niuka-casimiro-422098110/" target="_blank"><i class="fa-brands icone-social fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="card">
@@ -315,9 +321,9 @@
                             <p>COORD.<br>COMERCIAL</p>
                         </div>
                         <div id="rede-social-team">
-                            <a href="#"><i class="fa-brands icone-social fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands icone-social fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands icone-social fa-linkedin-in"></i></a>
+                            <a href="https://web.facebook.com/fnginamau" target="_blank"><i class="fa-brands icone-social fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/ceu.ao/" target="_blank"><i class="fa-brands icone-social fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/fl%C3%A1vio-lima-8a5704233/" target="_blank"><i class="fa-brands icone-social fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="card">
@@ -327,9 +333,9 @@
                             <p>DESENVOL.<br>FULLSTACK</p>
                         </div>
                         <div id="rede-social-team">
-                            <a href="#"><i class="fa-brands icone-social fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands icone-social fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands icone-social fa-linkedin-in"></i></a>
+                            <a href="https://web.facebook.com/elisinha.reis/" target="_blank"><i class="fa-brands icone-social fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/elisinhareis/" target="_blank"><i class="fa-brands icone-social fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/elizangila-reis-02a514220/" target="_blank"><i class="fa-brands icone-social fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="card">
@@ -339,9 +345,9 @@
                             <p>COORD.<br>COMUNICAÇÃO</p>
                         </div>
                         <div id="rede-social-team">
-                            <a href="#"><i class="fa-brands icone-social fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands icone-social fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands icone-social fa-linkedin-in"></i></a>
+                            <a href="https://web.facebook.com/gomes.alirio" target="_blank"><i class="fa-brands icone-social fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/aliriogomes_/" target="_blank"><i class="fa-brands icone-social fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aliriogomes/" target="_blank"><i class="fa-brands icone-social fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -444,9 +450,9 @@
                     &copy; 2023 CEU. Todos os direitos reservados.
                 </div>
                 <div id="icone">
-                    <a href="#"><i class="fa-brands icone-footer fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands icone-footer fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands icone-footer fa-linkedin-in"></i></a>
+                    <a href="https://web.facebook.com/ceu.ao" target="_blank"><i class="fa-brands icone-footer fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ceu.ao/" target="_blank"><i class="fa-brands icone-footer fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/74070084/admin/feed/posts/" target="_blank"><i class="fa-brands icone-footer fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -455,14 +461,24 @@
     <!--
     <a href="#home" class="back-to-top"><img src="compress-img/svg/seta-para-cima 1.svg" alt=""></a> -->
     <script>
+
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
         function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        /*function myFunction() {
           var x = document.getElementById("myTopnav");
           if (x.className === "topnav") {
             x.className += " responsive";
           } else {
             x.className = "topnav";
           }
-        }
+        }*/
     </script>
     <!--CONFIG SLIDES CARROSEL-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
