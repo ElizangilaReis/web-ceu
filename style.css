@@ -1428,12 +1428,8 @@ footer.section {
 @media(max-width: 768px) {
     .section {
         width: 84% !important;
-        box-sizing: border-box !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
         margin: 0 auto !important;
-        background-color: red;
+        text-align: center !important;
     }
 
     #header{
