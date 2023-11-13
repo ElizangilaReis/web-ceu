@@ -2205,6 +2205,24 @@ footer.section {
         right: 2rem;
       }
   }
+
+  @media screen and (min-width: 1244px) {
+    .cabecalho{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 853px) {
+    .cabecalho{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 930px) {
+    .cabecalho{
+        display: none;
+    }
+  }
   
 
 /*=============== CSS BOTAO SUBIR PARA O TOPO ===============*/
