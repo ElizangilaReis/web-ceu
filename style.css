@@ -981,6 +981,10 @@ footer.section {
     #benefits{
         padding: 70px 0px;
     }
+
+    .menu-hide{
+        display: none;
+    }
 }
 
 
@@ -1132,6 +1136,8 @@ footer.section {
         justify-content: center !important;
         margin: 0 auto !important;
     }
+
+    
 
     #header{
         display: flex;
@@ -1387,6 +1393,32 @@ footer.section {
 
 
 /*SCREENS TABLET*/
+
+@media(max-width: 840px) {
+    #services .card1{
+        width: 370px;
+        height: 240px;
+    }
+
+    #header{
+        display: none;
+    }
+
+    .img-card-services{
+        width: 48px;
+    }
+
+    #services .card1 .title {
+        font-size: 0.8em;
+    }
+
+    #services .card1 p{
+        font-size: 0.7em;
+        line-height: 15px;
+        text-align: justify;
+    }
+}
+
 @media(max-width: 768px) {
     .section {
         width: 84% !important;
@@ -1450,10 +1482,6 @@ footer.section {
         text-align: left;
         justify-content: left;
         z-index: 990;
-    }
-
-    .topnav{
-        display: flex !important;
     }
     
     .img-descontos{
@@ -1566,12 +1594,12 @@ footer.section {
     }
 
     #services .card1{
-        width: 240px;
+        width: 370px;
         height: 240px;
     }
 
     .img-card-services{
-        width: 30px;
+        width: 48px;
     }
 
     #services .card1 .title {
@@ -1579,10 +1607,11 @@ footer.section {
     }
 
     #services .card1 p{
-        font-size: 0.6em;
+        font-size: 0.7em;
         line-height: 15px;
         text-align: justify;
     }
+
 
     .barra-footer{
         width: 100%;
@@ -1612,7 +1641,17 @@ footer.section {
 
   }
 
-  
+  .cabecalho{
+    background: var(--gradient-secondary, linear-gradient(180deg, #0092DC 0%, #D7F5FF 100%));
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-mobile{
+    width: 70px;
+}
 
 /*SCREENS MOBILE*/
 @media(max-width: 480px) {
@@ -1622,12 +1661,16 @@ footer.section {
       text-align: center !important;
     }
 
+    .menu-hide{
+        display: flex;
+    }
+
     #mobile{
         width: 300px;
     }
 
     .mySwiperBanner{
-        padding-top: 123px;
+        padding-top: 93px;
     }
     
 
@@ -1727,6 +1770,7 @@ footer.section {
 
     .benefits h2 {
         font-size: 2em;
+        line-height: 40px;
     }
 
     .texto-novidades p{
@@ -1818,15 +1862,6 @@ footer.section {
     #header{
         display: none !important;
     }
-
-    .topnav{
-        display: flex !important;
-    }
-
-    .topnav img{
-        width: 18%;
-        padding-left: 22px;
-    }
 }
   
 
@@ -1841,6 +1876,10 @@ footer.section {
         justify-content: center !important;
         margin: 0 auto !important;
 
+    }
+
+    .menu-hide{
+        display: block;
     }
 
     .mySwiperBanner{
@@ -1911,7 +1950,8 @@ footer.section {
     }
 
     .benefits p{
-        font-size: 1em;
+        font-size: 2em;
+        line-height: 40px;
     }
 
     .cards{
@@ -2093,26 +2133,139 @@ footer.section {
       display: block;
     }
   }
-  
 
-  /*@media screen and (max-width: 768px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon{
-      float: right;
-      display: block;
-    }
+  /*=====Menu======*/
+
+.menu2 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.9); top:0; left: 0;
+}
+.btn-close {
+    color: var(--color-white);
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+.menu2 ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+
+}
+.menu2 li {
+    padding: 1.5%;
 }
 
-@media screen and (max-width: 768px) {
-    .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a{
-    float: none;
-    display: block;
+.menu2 li a {
+    font-size: 2em;
+    color:  #fff;
+    padding: 1.5% 3%;
+}
+.menu2 li a:hover {
+    border: 1px solid #00217E;
+}
+
+.btn-menu {
+    float: right;
     text-align: center;
+    color: #fff;
+    cursor: pointer;   
+    background: none;
+    border: none;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+
+  @media screen and (min-width: 1280px) {
+    .btn-menu {
+        display: none;
+    }
+    .btn-close {
+        display: none;
+    }
+
+    .menu-hide{
+        display: none;
+    }
+
+    .menu2 {
+        width: auto;
+        height: 56px;
+        line-height: 56px;
+        float: right;
+        background-color: #f5f5f5;
+        display: block !important;
+        position: static;
+    }
+    .menu2 li {
+        padding: 0;
+        float: left;
+    }
+    .menu2 li a {
+        color: #130400;
+        font-size: 1em;
+        padding: 15px;
+    }
+    .menu2 li a:hover {
+        border: none;
+        color: #00217E;
+        
+    }
   }
-}*/
+  
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+    position: fixed;
+    background: var(--base-color);
+    right: 1rem;
+    bottom: -20%;
+    display: inline-flex;
+    padding: 1rem;
+    border-radius: .25rem;
+    z-index: var(--z-tooltip);
+    opacity: .8;
+    transition: .4s;
+  }
+  
+  .scrollup:hover {
+    background-color: var(--base-color-second);
+    opacity: 1;
+  }
+  
+  .scrollup__icon {
+    font-size: 1.25rem;
+    color: #fff;
+  }
+  
+  /* Show Scroll Up*/
+  .show-scroll {
+    bottom: 3rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .scrollup {
+        right: 2rem;
+      }
+  }
+
+  /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: 1rem;
+    border-radius: .5rem;
+    background-color: #ddd;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--base-color-second);
+    border-radius: .5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--base-color);
+  }

@@ -43,21 +43,23 @@
         </div>
     </header>
     
-   <!-- Top Navigation Menu -->
-    <div class="topnav">
-        <img class="logo-mobile logo" src="compress-img/PNG/CEU LOGO 2023-06.png" alt="">
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a class="linkMenu" href="#services" >Serviços</a>
-            <a class="linkMenu" href="#parceiros">Parceiros</a>
-            <a class="linkMenu" href="#novidades">Novidades</a>
-            <a class="linkMenu" href="#ceu">Sobre o CEU</a>
-            <a class="linkMenu" href="#contactos">Contactos</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa iconeBega fa-bars"></i>
+    <div class="cabecalho menu-hide">
+        <a href="index.html">
+            <img class="img-mobile" src="compress-img/PNG/logo-mobile.png" alt="">
         </a>
+          <button class="btn-menu" id="toggle-button">
+            <i class="fa fa-bars fa-lg"></i>
+          </button>
+        <nav class="menu2" id="mobile-menu">
+            <i class="fa fa-times fa-lg btn-close close-button"></i>
+            <ul>
+            <li><a class="close-button" href="#services">Serviços</a></li>
+            <li><a class="close-button" href="#parceiros">Parceiros</a></li>
+            <li><a class="close-button" href="#novidades">Novidades</a></li>
+            <li><a class="close-button" href="#ceu">Sobre o CEU</a></li>
+            <li><a class="close-button" href="#contactos">Contactos</a></li>
+            </ul>
+        </nav>
     </div>
       
     <main>
@@ -130,10 +132,7 @@
                         <img class="img-card-services" src="compress-img/svg/uiw3_safety.svg" alt="">
                         <h3 class="title">Cartão de Descontos</h3>
                         <p>
-                            Para os estudantes universitários, 
-                            a estabilidade econômica oferece a oportunidade 
-                            de economizar ainda mais, com descontos exclusivos 
-                            e promoções especiais.
+                            Para os estudantes universitários, a estabilidade econômica oferece a oportunidade de economizar ainda mais, com descontos exclusivos e promoções especiais.
                         </p>
                     </div>
                 </div>
@@ -458,27 +457,59 @@
         </div>
     </footer>
 
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a>
+
     <!--
     <a href="#home" class="back-to-top"><img src="compress-img/svg/seta-para-cima 1.svg" alt=""></a> -->
     <script>
 
         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
+        var toggleMenu = document.getElementById("toggle-button");
+        var navMenu = document.getElementById("mobile-menu");
+        var closeButtons = document.querySelectorAll(".close-button"); // Selecione todos os links com a classe "close-button"
+
+        toggleMenu.addEventListener("click", () => {
+            if (navMenu.style.display === "block") {
+                navMenu.style.display = "none"; // Fecha o menu se estiver aberto
             } else {
-                x.style.display = "block";
+                navMenu.style.display = "block"; // Abre o menu se estiver fechado
             }
+        });
+
+        closeButtons.forEach(function (closeButton) {
+            closeButton.addEventListener("click", () => {
+                navMenu.style.display = "none"; // Fecha o menu quando um link é clicado
+            });
+        });
+
+        /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight,
+              sectionTop = current.offsetTop - 50,
+              sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
-        /*function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }*/
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+        function scrollUp(){
+        const scrollUp = document.getElementById('scroll-up');
+        if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+        }
+        window.addEventListener('scroll', scrollUp)
     </script>
     <!--CONFIG SLIDES CARROSEL-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
