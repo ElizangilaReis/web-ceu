@@ -43,6 +43,7 @@
         </div>
     </header>
     
+    /*NOVO MENU MOBILE*/
     <div class="cabecalho menu-hide">
         <a href="index.html">
             <img class="img-mobile" src="compress-img/PNG/logo-mobile.png" alt="">
@@ -457,7 +458,7 @@
         </div>
     </footer>
 
-    <!--=============== SCROLL UP ===============-->
+    <!--=============== ICONE BOTAO SUBIR PARA O TOPO ===============-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="fa-solid fa-arrow-up scrollup__icon"></i>
     </a>
@@ -485,26 +486,7 @@
             });
         });
 
-        /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
-
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 50,
-              sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
-
+        /*FUNCAO BOTAO SUBIR PARA O TOPO*/
         function scrollUp(){
         const scrollUp = document.getElementById('scroll-up');
         if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')

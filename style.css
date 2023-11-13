@@ -2113,28 +2113,9 @@ footer.section {
     #header{
         display: none !important;
     }
-
-    .topnav{
-        display: flex !important;
-    }
-
-    .topnav img{
-        width: 18%;
-        padding-left: 22px;
-    }
   }
 
-  /*Menu Hamburguer*/
-  
-  @media screen and (max-width: 768px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-
-  /*=====Menu======*/
+  /*=====MENU APENAS PARA MOBILE======*/
 
 .menu2 {
     display: none;
@@ -2180,7 +2161,7 @@ footer.section {
     margin-right: 10px;
 }
 
-
+/*CSS MENU MOBILE PARA OCULTAR EM TELAS DE PC */
   @media screen and (min-width: 1280px) {
     .btn-menu {
         display: none;
@@ -2217,9 +2198,16 @@ footer.section {
         
     }
   }
+
+  /*AFASTAMENTO DO BOTAO SUBIR PARA O TOPO, PARA ESQUERDA NO BREAKPOINT PARA TELA DE PC*/
+  @media screen and (min-width: 1024px) {
+    .scrollup {
+        right: 2rem;
+      }
+  }
   
 
-/*=============== SCROLL UP ===============*/
+/*=============== CSS BOTAO SUBIR PARA O TOPO ===============*/
 .scrollup {
     position: fixed;
     background: var(--base-color);
@@ -2248,13 +2236,9 @@ footer.section {
     bottom: 3rem;
   }
 
-  @media screen and (min-width: 1024px) {
-    .scrollup {
-        right: 2rem;
-      }
-  }
+  
 
-  /*=============== SCROLL BAR ===============*/
+  /*=============== CSS PARA ALTERAR A COR DA BARRA DE SCROLL ===============*/
 ::-webkit-scrollbar {
     width: 1rem;
     border-radius: .5rem;
