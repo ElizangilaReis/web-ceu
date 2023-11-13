@@ -62,13 +62,18 @@
             </ul>
         </nav>
     </div>
+
+    <!--BOTAO ALERTA PARA SE INSCREVER-->
+    <div class="cta">
+        <a href="https://forms.gle/ZdSaEvdcMPCZmCZw7" target="_blank" id="ctaButton">Inscrever-se</a>
+    </div>
       
     <main>
 
         <section class="section banner-mobile">
             <div id="mobile">
                 <swiper-container class="mySwiper mySwiperBanner" pagination="true" pagination-clickable="true" navigation="false" grab-cursor="true"
-                centered-slides="true" slides-per-view="auto" autoplay-delay="1000" autoplay-disable-on-interaction="false">
+                centered-slides="true" slides-per-view="auto" autoplay-delay="2000" autoplay-disable-on-interaction="false">
                     <swiper-slide class="carrosel-banner">
                     <img src="compress-img/inscricao.jpeg" />
                     </swiper-slide>
@@ -492,6 +497,17 @@
         if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
         }
         window.addEventListener('scroll', scrollUp)
+
+        // JAVASCRIPT BOTAO ALERTA PARA SE INSCREVER
+        window.onscroll = function() {
+        var ctaButton = document.getElementById("ctaButton");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+            ctaButton.style.display = "block";
+        } else {
+            ctaButton.style.display = "none";
+        }
+    };
+
     </script>
     <!--CONFIG SLIDES CARROSEL-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
